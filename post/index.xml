@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>https://jessicazzzzzz.github.io/post/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Sep 2021 21:07:51 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Newblog</title>
+      <link>https://jessicazzzzzz.github.io/post/newblog/</link>
+      <pubDate>Sun, 05 Sep 2021 21:07:51 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/post/newblog/</guid>
+      <description>新建一个本地branch  git branch  git checkout  or git checkout -b 4.git push -u origin   删除本地的branch  git branch -d   删除远程的branch  git branch push origin :master  查看所有的branch  git branch -a  想要换本地branch  git checkout  git checkout - (回到原来的branch)  push 前需要注意的事项  第一次操作的话，(在同一的文件夹下），需要git init git add . (加上所有的）或者 git add &amp;ldquo;file name&amp;rdquo;（加指定文件） git commit -m &amp;ldquo;自定义&amp;rdquo; git remote add origin https://github.</description>
+    </item>
+    
+  </channel>
+</rss>
