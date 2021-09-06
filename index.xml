@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://jessicazzzzzz.github.io/</link>
+    <link>https://jessicazzzzzz.github.io/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Sep 2021 21:07:51 +1000</lastBuildDate><atom:link href="http://jessicazzzzzz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Sep 2021 21:07:51 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于github 的一些注意事项</title>
-      <link>http://jessicazzzzzz.github.io/post/newblog/</link>
+      <link>https://jessicazzzzzz.github.io/post/github%E7%9A%84%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Sun, 05 Sep 2021 21:07:51 +1000</pubDate>
       
-      <guid>http://jessicazzzzzz.github.io/post/newblog/</guid>
+      <guid>https://jessicazzzzzz.github.io/post/github%E7%9A%84%E5%AD%A6%E4%B9%A0/</guid>
       <description>新建一个本地branch  git branch  git checkout  or git checkout -b 4.git push -u origin   删除本地的branch  git branch -d   删除远程的branch  git branch push origin :master  查看所有的branch  git branch -a  想要换本地branch  git checkout  git checkout - (回到原来的branch)  push 前需要注意的事项  第一次操作的话，(在同一的文件夹下），需要git init git add . (加上所有的）或者 git add &amp;ldquo;file name&amp;rdquo;（加指定文件） git commit -m &amp;ldquo;自定义&amp;rdquo; git remote add origin https://github.</description>
     </item>
     
     <item>
       <title>关于terminal的学习</title>
-      <link>http://jessicazzzzzz.github.io/post/terminal%E7%9A%84%E5%AD%A6%E4%B9%A0/</link>
+      <link>https://jessicazzzzzz.github.io/post/terminal%E7%9A%84%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Sun, 05 Sep 2021 21:07:51 +1000</pubDate>
       
-      <guid>http://jessicazzzzzz.github.io/post/terminal%E7%9A%84%E5%AD%A6%E4%B9%A0/</guid>
+      <guid>https://jessicazzzzzz.github.io/post/terminal%E7%9A%84%E5%AD%A6%E4%B9%A0/</guid>
       <description>mac terminal 的学习  最好下载一个新的iterm ,这个更好一点，有很多功能 然后下载oh my zsh，一样功能更多，有很多plugins（插件）可以使用，我注意是为了git 的插件，因为经常不知道自己到了哪个branch，需要反复check 然后就是打开.zshrc 文件 ** (way1)cd ~ ,vi .zshrc ** (way2) 现在vs code中command palette 输入shell command install &amp;lsquo;code&amp;rsquo; command in PATH,一般当你输入shell command ，它会自己pop up出来，然后重新启动vs，就可以用了。 在terminal 中就可以输入code ~/.zshrc   装一些快捷键在terminal中  在打开的zshrc 文件中，通过添加以下  plugins=(git bundler dotenv osx rake last-working-dir websearch ) **terminal 中会自动添加这些
   一些比较方便的快捷方式   google balabala **就会自动打开打开网页 ofd **自动打开文档 tab **在同一个page下重新打开一个terminal command+d **在旁边重新打开一个terminal shift+command+d ** 在下面重新打开一个terminal command +w **删除已经开的terminal dirs -v **显示所有的directories  </description>
     </item>
     
     <item>
       <title>第一次搭建blog</title>
-      <link>http://jessicazzzzzz.github.io/post/hugo%E7%9A%84%E6%90%AD%E5%BB%BA/</link>
+      <link>https://jessicazzzzzz.github.io/post/hugo%E7%9A%84%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Sun, 05 Sep 2021 21:07:51 +1000</pubDate>
       
-      <guid>http://jessicazzzzzz.github.io/post/hugo%E7%9A%84%E6%90%AD%E5%BB%BA/</guid>
+      <guid>https://jessicazzzzzz.github.io/post/hugo%E7%9A%84%E6%90%AD%E5%BB%BA/</guid>
       <description>当你需要更新文章，通过git仓库放文章到博客hugo上的时候 1:第一步：在根目录下（即包括你所有文档的最外面一层文档）：hugo server -t 主题名字 &amp;ndash;buidDrafts （这个在本地就建立了blog，可以在localhost:1313访问） 2:第二步：在根目录下，hugo &amp;ndash;theme=&amp;ldquo;主题名字“ &amp;ndash;baseUrl=&amp;ldquo;https://你自己的git仓库.github.io/&amp;rdquo; &amp;ndash;buildDrafts (这样就生成一个public 文档) 以下都是在public 目录下操作 3:第三步： 进入public 目录，git init 4:第四步： git add . 5:第五步： git commit -m &amp;ldquo;自己起名字“ 6:第六步：git remote rm origin(我第一创建有这个，第二次提交就出错，必须remove) 7:第七步： git remote add origin https://github.com/你自己的github用户名/你的仓库名.github.io.git 8:第八步：git push -u origin master(我原本是main，但是我也不知道怎么改成了master，所以我有两个brunch，导致我还需要一步把master的pull到main上去) done!!</description>
     </item>
     
