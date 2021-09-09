@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on 小白博客</title>
+    <link>https://jessicazzzzzz.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on 小白博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Sep 2021 21:07:51 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blog的一些改进</title>
+      <link>https://jessicazzzzzz.github.io/post/hugo%E8%BF%9B%E4%B8%80%E6%AD%A5%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Sun, 05 Sep 2021 21:07:51 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/post/hugo%E8%BF%9B%E4%B8%80%E6%AD%A5%E5%AD%A6%E4%B9%A0/</guid>
+      <description>config.toml的一些设置 baseURL = &amp;quot;https://自己的域名&amp;quot; languageCode = &amp;quot;en-us&amp;quot; title = “博客的名字&amp;quot; theme = &amp;quot;主题的名字&amp;quot;  这样之后terminal 中输入会简单很多 1 .在根目录下按顺序输入以下的命令   hugo server -D （建立本地站点） hugo -D （建立public文件） 2 . 在public 目录下
+git add . git commit -m &amp;quot;自定义名字&amp;quot; git push </description>
+    </item>
+    
+    <item>
+      <title>第一次搭建blog</title>
+      <link>https://jessicazzzzzz.github.io/post/hugo%E7%9A%84%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Sun, 05 Sep 2021 21:07:51 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/post/hugo%E7%9A%84%E6%90%AD%E5%BB%BA/</guid>
+      <description>当你需要更新文章，通过git仓库放文章到博客hugo上的时候 1:第一步：在根目录下（即包括你所有文档的最外面一层文档）：hugo server -t 主题名字 &amp;ndash;buidDrafts （这个在本地就建立了blog，可以在localhost:1313访问） 2:第二步：在根目录下，hugo &amp;ndash;theme=&amp;ldquo;主题名字“ &amp;ndash;baseUrl=&amp;ldquo;https://你自己的git仓库.github.io/&amp;rdquo; &amp;ndash;buildDrafts (这样就生成一个public 文档) 以下都是在public 目录下操作 3:第三步： 进入public 目录，git init 4:第四步： git add . 5:第五步： git commit -m &amp;ldquo;自己起名字“ 6:第六步：git remote rm origin(我第一创建有这个，第二次提交就出错，必须remove) 7:第七步： git remote add origin https://github.com/你自己的github用户名/你的仓库名.github.io.git 8:第八步：git push -u origin master(我原本是main，但是我也不知道怎么改成了master，所以我有两个brunch，导致我还需要一步把master的pull到main上去) done!!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,13 +6,31 @@
     <description>Recent content in Tags on 小白博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Sep 2021 21:07:51 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Sep 2021 21:21:07 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>tag1</title>
-      <link>https://jessicazzzzzz.github.io/tags/tag1/</link>
+      <title>linux</title>
+      <link>https://jessicazzzzzz.github.io/tags/linux/</link>
+      <pubDate>Thu, 09 Sep 2021 21:21:07 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://jessicazzzzzz.github.io/tags/github/</link>
       <pubDate>Sun, 05 Sep 2021 21:07:51 +1000</pubDate>
       
-      <guid>https://jessicazzzzzz.github.io/tags/tag1/</guid>
+      <guid>https://jessicazzzzzz.github.io/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://jessicazzzzzz.github.io/tags/hugo/</link>
+      <pubDate>Sun, 05 Sep 2021 21:07:51 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     

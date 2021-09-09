@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jessicazzzzzz.github.io/tags/linux/</loc>
+    <lastmod>2021-09-09T21:21:07+10:00</lastmod>
+  </url><url>
     <loc>https://jessicazzzzzz.github.io/linux/</loc>
     <lastmod>2021-09-09T21:21:07+10:00</lastmod>
   </url><url>
     <loc>https://jessicazzzzzz.github.io/linux/rm-mkdir/</loc>
+    <lastmod>2021-09-09T21:21:07+10:00</lastmod>
+  </url><url>
+    <loc>https://jessicazzzzzz.github.io/tags/</loc>
     <lastmod>2021-09-09T21:21:07+10:00</lastmod>
   </url><url>
     <loc>https://jessicazzzzzz.github.io/</loc>
@@ -23,13 +29,13 @@
     <loc>https://jessicazzzzzz.github.io/post/hugo%E8%BF%9B%E4%B8%80%E6%AD%A5%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2021-09-05T21:07:51+10:00</lastmod>
   </url><url>
+    <loc>https://jessicazzzzzz.github.io/tags/github/</loc>
+    <lastmod>2021-09-05T21:07:51+10:00</lastmod>
+  </url><url>
+    <loc>https://jessicazzzzzz.github.io/tags/hugo/</loc>
+    <lastmod>2021-09-05T21:07:51+10:00</lastmod>
+  </url><url>
     <loc>https://jessicazzzzzz.github.io/post/</loc>
-    <lastmod>2021-09-05T21:07:51+10:00</lastmod>
-  </url><url>
-    <loc>https://jessicazzzzzz.github.io/tags/tag1/</loc>
-    <lastmod>2021-09-05T21:07:51+10:00</lastmod>
-  </url><url>
-    <loc>https://jessicazzzzzz.github.io/tags/</loc>
     <lastmod>2021-09-05T21:07:51+10:00</lastmod>
   </url><url>
     <loc>https://jessicazzzzzz.github.io/post/github%E7%9A%84%E5%AD%A6%E4%B9%A0/</loc>
