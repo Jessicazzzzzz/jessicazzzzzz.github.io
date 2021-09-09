@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 05 Sep 2021 21:07:51 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>.gitignore怎么新建以及使用</title>
+      <link>https://jessicazzzzzz.github.io/post/-.gitignore%E6%96%87%E6%A1%A3%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sun, 05 Sep 2021 21:07:51 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/post/-.gitignore%E6%96%87%E6%A1%A3%E4%BD%BF%E7%94%A8/</guid>
+      <description>记录所有的git出错的情况  git push 出错遇到的一些关于这个系统生成文件的处理。 为什么要使用这个文档呢？ ** 因为很多系统生成文件，当git push 的时候会出错，就是提示你是这些文件造成的，那么需要处理它。   #第一步再该文件夹下新建一个目录
+ touch .gitignore #第二步编辑它，根据自己的系统，还有程序生成的文件去编辑它 vi .gitignore ** (参考文档)[https://github.com/github/gitignore.git ]可以去自己复制自己需要隐藏的内容 git add .gitignore git commit -m “自定义” git push  </description>
+    </item>
+    
+    <item>
       <title>关于github 的一些注意事项</title>
       <link>https://jessicazzzzzz.github.io/post/github%E7%9A%84%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Sun, 05 Sep 2021 21:07:51 +1000</pubDate>
