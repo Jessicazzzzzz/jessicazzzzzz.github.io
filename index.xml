@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>小白博客</title>
     <link>https://jessicazzzzzz.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on 小白博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Sep 2021 21:07:51 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Sep 2021 21:21:07 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>rm, mkdir的基本用法</title>
+      <link>https://jessicazzzzzz.github.io/linux/rm-mkdir/</link>
+      <pubDate>Thu, 09 Sep 2021 21:21:07 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/linux/rm-mkdir/</guid>
+      <description>创建文件 touch filename 建立文档 mkdir dirname 将文件移到文件夹 mv filename dirname </description>
+    </item>
+    
+    <item>
+      <title>Java学习笔记</title>
+      <link>https://jessicazzzzzz.github.io/java/javafirstlearning/</link>
+      <pubDate>Thu, 09 Sep 2021 20:56:47 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/java/javafirstlearning/</guid>
+      <description>怎么找系统中的jdk /usr/libexec/java_home -V 第一运行出现以下的错误 welcome.java:4: error: class Welcome is public, should be declared in a file named Welcome.java 是因为文件名和class 的Welcome 不一致造成，改一下文件名就可以了，或者改一下class 的名字就行，确保两个的名字一致即可。
+在terminal 中执行 javac filename.java java filename </description>
+    </item>
+    
     <item>
       <title>.gitignore怎么新建以及使用</title>
       <link>https://jessicazzzzzz.github.io/post/gitignore%E6%80%8E%E4%B9%88%E6%96%B0%E5%BB%BA%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8/</link>

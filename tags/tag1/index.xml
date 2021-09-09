@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tag1 on 小白博客</title>
+    <link>https://jessicazzzzzz.github.io/tags/tag1/</link>
+    <description>Recent content in tag1 on 小白博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Sep 2021 21:07:51 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/tags/tag1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>.gitignore怎么新建以及使用</title>
+      <link>https://jessicazzzzzz.github.io/post/gitignore%E6%80%8E%E4%B9%88%E6%96%B0%E5%BB%BA%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sun, 05 Sep 2021 21:07:51 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/post/gitignore%E6%80%8E%E4%B9%88%E6%96%B0%E5%BB%BA%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8/</guid>
+      <description>记录所有的git出错的情况  git push 出错遇到的一些关于这个系统生成文件的处理。 为什么要使用这个文档呢？ 因为很多系统生成文件，当git push 的时候会出错，就是提示你是这些文件造成的，那么需要处理它。   #第一步再该文件夹下新建一个目录
+ touch .gitignore #第二步编辑它，根据自己的系统，还有程序生成的文件去编辑它 vi .gitignore ** (参考文档)[https://github.com/github/gitignore.git ]可以去自己复制自己需要隐藏的内容 git add .gitignore git commit -m “自定义” git push  </description>
+    </item>
+    
+    <item>
+      <title>关于github 的一些注意事项</title>
+      <link>https://jessicazzzzzz.github.io/post/github%E7%9A%84%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Sun, 05 Sep 2021 21:07:51 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/post/github%E7%9A%84%E5%AD%A6%E4%B9%A0/</guid>
+      <description>新建一个本地branch  git branch (branch name) git checkout (branch name) or git checkout -b (branch name) 4.git push -u origin (branch name)  删除本地的branch  git branch -d (branch name)  删除远程的branch  git branch push origin :master  查看所有的branch  git branch -a  想要换本地branch  git checkout (branch name) git checkout - (回到原来的branch)  push 前需要注意的事项  第一次操作的话，(在同一的文件夹下），需要git init git add . (加上所有的）或者 git add &amp;ldquo;file name&amp;rdquo;（加指定文件） git commit -m &amp;ldquo;自定义&amp;rdquo; git remote add origin https://github.</description>
+    </item>
+    
+  </channel>
+</rss>
