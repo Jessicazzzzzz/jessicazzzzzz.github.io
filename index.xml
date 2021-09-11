@@ -47,6 +47,15 @@ git add . git commit -m &amp;quot;自定义名字&amp;quot; git push </descripti
     </item>
     
     <item>
+      <title>~,位操作取反</title>
+      <link>https://jessicazzzzzz.github.io/post/%E4%BD%8D%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Sun, 05 Sep 2021 21:07:51 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/post/%E4%BD%8D%E6%93%8D%E4%BD%9C/</guid>
+      <description>负数怎么表示 8 二进制是 01000； -8 二进制是：11000；  负数是用补码的形式表示的， 二进制的补码是先取反，然后再加1，公式如下：反码+1=补码 正数的补码 和反码都是其本身   取反例子 ~8 二进制：01000（最高位是符号位，因为是非负数，所以是0） 取反：10111（那么可以看出是个负数，那么这个是个补码） （要得到这个负数是什么，需要以下几步） -1: 10110 取反：01001 （可以看出这个是9，但是是负数，所以-9） ~-1 二进制： 10001（最高位符号位） 取反： 11110 补码： 11111（电脑中表示为这个形式） ～-1取反： 00000 ～-1 结果为： 0 </description>
+    </item>
+    
+    <item>
       <title>关于github 的一些注意事项</title>
       <link>https://jessicazzzzzz.github.io/post/github%E7%9A%84%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Sun, 05 Sep 2021 21:07:51 +1000</pubDate>
