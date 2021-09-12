@@ -6,19 +6,19 @@
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.88.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="John Doe" />
+    <meta name="author" content="小白" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="https://jessicazzzzzz.github.io/css/main.min.4a7ec8660f9a44b08c4da97c5f2e31b1192df1d4d0322e65c0dbbc6ecb1b863f.css" />
 
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="blog的一些改进"/>
-<meta name="twitter:description" content="config.toml的一些设置 baseURL = &quot;https://自己的域名&quot; languageCode = &quot;en-us&quot; title = “博客的名字&quot; theme = &quot;主题的名字&quot;  这样之后terminal 中输入会简单很多 1 .在根目录下按顺序输入以下的命令   hugo server -D （建立本地站点） hugo -D （建立public文件） 2 . 在public 目录下
-git add . git commit -m &quot;自定义名字&quot; git push "/>
+<meta name="twitter:description" content="config.toml的一些设置 baseURL = &quot;https://自己的域名&quot; languageCode = &quot;en-us&quot; title = “博客的名字&quot; theme = &quot;主题的名字&quot; [params] author = &quot;BALA&quot; description = &quot;除了生死都是擦伤&quot; avatar =&quot;girl.jpg&quot;  这样之后terminal 中输入会简单很多 1 .在根目录下按顺序输入以下的命令   hugo server -D （建立本地站点） hugo -D （建立public文件） 2 . 在public 目录下
+git add . git commit -m &quot;自定义名字&quot; git push  改变头像  将照片放到theme目录里的static 里面 将你根目录的config.toml 修改一下  [params] author = &quot;BALA&quot; description = &quot;除了生死都是擦伤&quot; avatar =&quot;girl.jpg&quot; 出错情况  unmarshal failed: toml: basic strings cannot have new lines  我直接在vs code 中修改配置文件，就不行，必须用vi config."/>
 
     <meta property="og:title" content="blog的一些改进" />
-<meta property="og:description" content="config.toml的一些设置 baseURL = &quot;https://自己的域名&quot; languageCode = &quot;en-us&quot; title = “博客的名字&quot; theme = &quot;主题的名字&quot;  这样之后terminal 中输入会简单很多 1 .在根目录下按顺序输入以下的命令   hugo server -D （建立本地站点） hugo -D （建立public文件） 2 . 在public 目录下
-git add . git commit -m &quot;自定义名字&quot; git push " />
+<meta property="og:description" content="config.toml的一些设置 baseURL = &quot;https://自己的域名&quot; languageCode = &quot;en-us&quot; title = “博客的名字&quot; theme = &quot;主题的名字&quot; [params] author = &quot;BALA&quot; description = &quot;除了生死都是擦伤&quot; avatar =&quot;girl.jpg&quot;  这样之后terminal 中输入会简单很多 1 .在根目录下按顺序输入以下的命令   hugo server -D （建立本地站点） hugo -D （建立public文件） 2 . 在public 目录下
+git add . git commit -m &quot;自定义名字&quot; git push  改变头像  将照片放到theme目录里的static 里面 将你根目录的config.toml 修改一下  [params] author = &quot;BALA&quot; description = &quot;除了生死都是擦伤&quot; avatar =&quot;girl.jpg&quot; 出错情况  unmarshal failed: toml: basic strings cannot have new lines  我直接在vs code 中修改配置文件，就不行，必须用vi config." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://jessicazzzzzz.github.io/post/hugo%E8%BF%9B%E4%B8%80%E6%AD%A5%E5%AD%A6%E4%B9%A0/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-09-05T21:07:51+10:00" />
@@ -29,9 +29,9 @@ git add . git commit -m &quot;自定义名字&quot; git push " />
   </head>
   <body>
     <header class="app-header">
-      <a href="https://jessicazzzzzz.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <a href="https://jessicazzzzzz.github.io/"><img class="app-header-avatar" src="/girl.jpg" alt="小白" /></a>
       <h1>小白博客</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+      <p>除了生死都是擦伤</p>
     </header>
     <main class="app-container">
       
@@ -68,6 +68,10 @@ git add . git commit -m &quot;自定义名字&quot; git push " />
 languageCode = &quot;en-us&quot;
 title = “博客的名字&quot;
 theme = &quot;主题的名字&quot;
+[params]
+author = &quot;BALA&quot;
+description = &quot;除了生死都是擦伤&quot;
+avatar =&quot;girl.jpg&quot;
 
 </code></pre><ul>
 <li>这样之后terminal 中输入会简单很多
@@ -86,7 +90,22 @@ git commit -m &quot;自定义名字&quot;
 git push
 
 
-</code></pre>
+</code></pre><hr>
+<h1 id="改变头像">改变头像</h1>
+<ul>
+<li>将照片放到theme目录里的static 里面</li>
+<li>将你根目录的config.toml 修改一下</li>
+</ul>
+<pre tabindex="0"><code>[params]
+author = &quot;BALA&quot;
+description = &quot;除了生死都是擦伤&quot;
+avatar =&quot;girl.jpg&quot;
+</code></pre><h1 id="出错情况">出错情况</h1>
+<pre tabindex="0"><code> unmarshal failed: toml: basic strings cannot have new lines
+</code></pre><ul>
+<li>我直接在vs code 中修改配置文件，就不行，必须用vi config.toml 修改，就不出错了。</li>
+</ul>
+
     </div>
     <div class="post-footer">
       

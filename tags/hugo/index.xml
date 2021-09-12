@@ -13,8 +13,8 @@
       <pubDate>Sun, 05 Sep 2021 21:07:51 +1000</pubDate>
       
       <guid>https://jessicazzzzzz.github.io/post/hugo%E8%BF%9B%E4%B8%80%E6%AD%A5%E5%AD%A6%E4%B9%A0/</guid>
-      <description>config.toml的一些设置 baseURL = &amp;quot;https://自己的域名&amp;quot; languageCode = &amp;quot;en-us&amp;quot; title = “博客的名字&amp;quot; theme = &amp;quot;主题的名字&amp;quot;  这样之后terminal 中输入会简单很多 1 .在根目录下按顺序输入以下的命令   hugo server -D （建立本地站点） hugo -D （建立public文件） 2 . 在public 目录下
-git add . git commit -m &amp;quot;自定义名字&amp;quot; git push </description>
+      <description>config.toml的一些设置 baseURL = &amp;quot;https://自己的域名&amp;quot; languageCode = &amp;quot;en-us&amp;quot; title = “博客的名字&amp;quot; theme = &amp;quot;主题的名字&amp;quot; [params] author = &amp;quot;BALA&amp;quot; description = &amp;quot;除了生死都是擦伤&amp;quot; avatar =&amp;quot;girl.jpg&amp;quot;  这样之后terminal 中输入会简单很多 1 .在根目录下按顺序输入以下的命令   hugo server -D （建立本地站点） hugo -D （建立public文件） 2 . 在public 目录下
+git add . git commit -m &amp;quot;自定义名字&amp;quot; git push  改变头像  将照片放到theme目录里的static 里面 将你根目录的config.toml 修改一下  [params] author = &amp;quot;BALA&amp;quot; description = &amp;quot;除了生死都是擦伤&amp;quot; avatar =&amp;quot;girl.jpg&amp;quot; 出错情况  unmarshal failed: toml: basic strings cannot have new lines  我直接在vs code 中修改配置文件，就不行，必须用vi config.</description>
     </item>
     
     <item>
