@@ -6,7 +6,16 @@
     <description>Recent content on 小白博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Sep 2021 20:06:23 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Sep 2021 22:08:40 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aboutme</title>
+      <link>https://jessicazzzzzz.github.io/about/aboutme/</link>
+      <pubDate>Sun, 12 Sep 2021 22:08:40 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/about/aboutme/</guid>
+      <description>努力学习编程中，记录学习点滴 </description>
+    </item>
+    
     <item>
       <title>Scanner注意事项</title>
       <link>https://jessicazzzzzz.github.io/java/scanner/</link>
