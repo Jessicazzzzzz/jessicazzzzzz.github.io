@@ -6,7 +6,16 @@
     <description>Recent content in Javae on 小白博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Sep 2021 20:56:47 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Sep 2021 20:06:23 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scanner注意事项</title>
+      <link>https://jessicazzzzzz.github.io/java/scanner/</link>
+      <pubDate>Sun, 12 Sep 2021 20:06:23 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/java/scanner/</guid>
+      <description>next()  next(),只scan下个字符 nextline(),scan 整行 nextInt(),只scan下个数字，其他的都留在了缓冲区  处理办法：  s.nextline()清除缓冲区；   Scanner s= new Scanner(System.in); System.out.println(&amp;quot;enter your salary of month&amp;quot;); while(!s.hasNextInt()) { //s.next()吃掉一个回车 s.nextLine();//吃掉剩余的行 System.out.println(&amp;quot;invalid input,try again.&amp;quot;); System.out.println(&amp;quot;enter your salary of month&amp;quot;); s.hasNextInt(); } </description>
+    </item>
+    
     <item>
       <title>Java学习笔记1</title>
       <link>https://jessicazzzzzz.github.io/java/javafirstlearning/</link>
@@ -14,7 +23,7 @@
       
       <guid>https://jessicazzzzzz.github.io/java/javafirstlearning/</guid>
       <description>怎么找系统中的jdk /usr/libexec/java_home -V 第一运行出现以下的错误 welcome.java:4: error: class Welcome is public, should be declared in a file named Welcome.java 是因为文件名和class 的Welcome 不一致造成，改一下文件名就可以了，或者改一下class 的名字就行，确保两个的名字一致即可。
-在terminal 中执行 javac filename.java java filename next()  next(),只scan下个字符 nextline(),scan 整行 nextInt(),只scan下个数字，其他的都留在了缓冲区  处理办法：  s.nextline()清除缓冲区；   Scanner s= new Scanner(System.in); System.out.println(&amp;quot;enter your salary of month&amp;quot;); while(!s.hasNextInt()) { //s.next()吃掉一个回车 s.nextLine();//吃掉剩余的行 System.out.println(&amp;quot;invalid input,try again.&amp;quot;); System.out.println(&amp;quot;enter your salary of month&amp;quot;); s.hasNextInt(); } </description>
+在terminal 中执行 javac filename.java java filename </description>
     </item>
     
   </channel>
