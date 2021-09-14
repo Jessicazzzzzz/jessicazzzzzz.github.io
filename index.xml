@@ -6,7 +6,16 @@
     <description>Recent content on 小白博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Sep 2021 22:08:40 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Sep 2021 21:09:20 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>面向对象学习java1</title>
+      <link>https://jessicazzzzzz.github.io/java/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Tue, 14 Sep 2021 21:09:20 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/java/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%AD%A6%E4%B9%A0/</guid>
+      <description>理解面向对象和类  将它们可以比喻成表格，field 是表头=类，每一行数据的内容就是对象 ![PICTURE test](https://raw.githubusercontent.com/Jessicazzzzzz/blog/master/540654.jpg） 如果是每个人都有相同的信息就需要创建一个公共函数，也就是一个共同的类， 这样，就既有静态数据又有动态数据了。     雇员表的结构 class employee{     id int id   姓名 string name   岗位 string job   基本工资 string salary   工作地址 string address    }    </description>
+    </item>
+    
     <item>
       <title>Aboutme</title>
       <link>https://jessicazzzzzz.github.io/about/aboutme/</link>
