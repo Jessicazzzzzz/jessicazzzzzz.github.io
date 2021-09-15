@@ -6,14 +6,32 @@
     <description>Recent content in Javae on 小白博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Sep 2021 21:09:20 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Sep 2021 14:30:32 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>重载笔记</title>
+      <link>https://jessicazzzzzz.github.io/java/%E9%87%8D%E8%BD%BD%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Wed, 15 Sep 2021 14:30:32 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/java/%E9%87%8D%E8%BD%BD%E7%AC%94%E8%AE%B0/</guid>
+      <description>重载的理解 它其实是对构造器的形参做的变化 一些小的知识点需要注意  可以有无数的class,但是只能有一个public class 构造器    名字与类相同 参数的变化可以直接导致传递的方式不同，也就是所谓的overload this.指的是静态变量，是做区别 如果传递一个空构造器，那就只能在main 方法中直接命名了   public class Overload { int id; String name; int age; public Overload (int id){ //this -&amp;gt;first id  this.id = id; } public Overload(int id ,String name,int age){ this.id =id; this.name = name; this.age = age; } public static void main(String[] args) { Overload student1 = new Overload(1001,&amp;#34;jessica&amp;#34;,18); //打印出1001，jessica,18  System.out.println(student1.id); System.out.println(student1.name); System.out.println(student1.age); } } </description>
+    </item>
+    
+    <item>
+      <title>面向对象理解1</title>
+      <link>https://jessicazzzzzz.github.io/java/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%90%86%E8%A7%A31/</link>
+      <pubDate>Wed, 15 Sep 2021 12:18:32 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/java/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%90%86%E8%A7%A31/</guid>
+      <description>先看下面的代码，是关于方法的运用 class Point { double x,y; public Point(double _x, double _y){ x = _x; y = _y; } public double getDistance(Point p){ return Math.sqrt((x-p.x)*(x-p.x)+(y-p.y)*(y-p.y));//注意优先级，需要大括号  } } public class TestPoint{ public static void main(String[] args) { Point p = new Point(3.0,4.0); Point origin = new Point(0,0); //理解这句  System.out.println(p.getDistance(origin)); } } 每次调用一个方法，栈帧都会开辟一个空间，需要注意它什么时候会销毁，一般来说，方法调用结束，就会销毁 Point p = new Point(3.0,4.0);  创建了一个新的对象，栈帧开了一个空间给它，默认值x=0,y=0，方法   构造器重新开辟一个空间， 给x,y赋值为3.0，4.0 当这句结束了，那对象调用就结束了，销毁x,y  Point origin = new Point(0,0);  跟上面一样，这次又给x,y重新赋值为0，0 这就结束时，销毁x,y  但是main方法没有结束，所以p,origin 的空间还在的 System.</description>
+    </item>
+    
     <item>
       <title>面向对象学习java1</title>
       <link>https://jessicazzzzzz.github.io/java/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Tue, 14 Sep 2021 21:09:20 +1000</pubDate>
       
       <guid>https://jessicazzzzzz.github.io/java/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%AD%A6%E4%B9%A0/</guid>
-      <description>理解面向对象和类  将它们可以比喻成表格，field 是表头=类，每一行数据的内容就是对象 ![PICTURE test](https://raw.githubusercontent.com/Jessicazzzzzz/blog/master/540654.jpg） 如果是每个人都有相同的信息就需要创建一个公共函数，也就是一个共同的类， 这样，就既有静态数据又有动态数据了。     雇员表的结构 class employee{     id int id   姓名 string name   岗位 string job   基本工资 string salary   工作地址 string address    }    </description>
+      <description>理解面向对象和类  将它们可以比喻成表格，field 是表头=类，每一行数据的内容就是对象  如果是每个人都有相同的信息就需要创建一个公共函数，也就是一个共同的类， 这样，就既有静态数据又有动态数据了。     雇员表的结构 class employee{     id int id   姓名 string name   岗位 string job   基本工资 string salary   工作地址 string address    }    </description>
     </item>
     
     <item>
@@ -22,7 +40,8 @@
       <pubDate>Sun, 12 Sep 2021 20:06:23 +1000</pubDate>
       
       <guid>https://jessicazzzzzz.github.io/java/scanner/</guid>
-      <description>next()  next(),只scan下个字符 nextline(),scan 整行 nextInt(),只scan下个数字，其他的都留在了缓冲区  处理办法：  s.nextline()清除缓冲区；   Scanner s= new Scanner(System.in); System.out.println(&amp;quot;enter your salary of month&amp;quot;); while(!s.hasNextInt()) { //s.next()吃掉一个回车 s.nextLine();//吃掉剩余的行 System.out.println(&amp;quot;invalid input,try again.&amp;quot;); System.out.println(&amp;quot;enter your salary of month&amp;quot;); s.hasNextInt(); } </description>
+      <description>next
+next()  next(),只scan下个字符 nextline(),scan 整行 nextInt(),只scan下个数字，其他的都留在了缓冲区  处理办法：  s.nextline()清除缓冲区；   Scanner s= new Scanner(System.in); System.out.println(&amp;quot;enter your salary of month&amp;quot;); while(!s.hasNextInt()) { //s.next()吃掉一个回车 s.nextLine();//吃掉剩余的行 System.out.println(&amp;quot;invalid input,try again.&amp;quot;); System.out.println(&amp;quot;enter your salary of month&amp;quot;); s.hasNextInt(); } </description>
     </item>
     
     <item>

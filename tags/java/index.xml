@@ -13,7 +13,8 @@
       <pubDate>Sun, 12 Sep 2021 20:06:23 +1000</pubDate>
       
       <guid>https://jessicazzzzzz.github.io/java/scanner/</guid>
-      <description>next()  next(),只scan下个字符 nextline(),scan 整行 nextInt(),只scan下个数字，其他的都留在了缓冲区  处理办法：  s.nextline()清除缓冲区；   Scanner s= new Scanner(System.in); System.out.println(&amp;quot;enter your salary of month&amp;quot;); while(!s.hasNextInt()) { //s.next()吃掉一个回车 s.nextLine();//吃掉剩余的行 System.out.println(&amp;quot;invalid input,try again.&amp;quot;); System.out.println(&amp;quot;enter your salary of month&amp;quot;); s.hasNextInt(); } </description>
+      <description>next
+next()  next(),只scan下个字符 nextline(),scan 整行 nextInt(),只scan下个数字，其他的都留在了缓冲区  处理办法：  s.nextline()清除缓冲区；   Scanner s= new Scanner(System.in); System.out.println(&amp;quot;enter your salary of month&amp;quot;); while(!s.hasNextInt()) { //s.next()吃掉一个回车 s.nextLine();//吃掉剩余的行 System.out.println(&amp;quot;invalid input,try again.&amp;quot;); System.out.println(&amp;quot;enter your salary of month&amp;quot;); s.hasNextInt(); } </description>
     </item>
     
     <item>
