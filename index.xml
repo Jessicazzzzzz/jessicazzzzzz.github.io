@@ -6,7 +6,26 @@
     <description>Recent content on 小白博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Sep 2021 13:54:40 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Sep 2021 20:40:50 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>多态</title>
+      <link>https://jessicazzzzzz.github.io/java/%E5%A4%9A%E6%80%81/</link>
+      <pubDate>Thu, 16 Sep 2021 20:40:50 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/java/%E5%A4%9A%E6%80%81/</guid>
+      <description>简单的封装  就是设置一定的权限
+ package com.object.cap; /* 这是一个简单的 javabean ,testcap1 中调用了它，可以看到一次权限设置的不同， 导致用法的不同 */ public class Testcap { private String name;//Testcap1中都不可用  int age; private boolean flag; public String getName(){ return name; } public void setName(String name) { this.name = name; } public void setAge(int age) { if(age&amp;lt;0||age&amp;gt;150){ System.out.println(&amp;#34;invalid age&amp;#34;); }else{ this.age = age; } } public boolean isFlag() { return flag; } public void setFlag(boolean flag) { this.flag = flag; } public int getAge() { return age; } } package com.</description>
+    </item>
+    
+    <item>
+      <title>继承相关</title>
+      <link>https://jessicazzzzzz.github.io/java/%E7%BB%A7%E6%89%BF%E7%9B%B8%E5%85%B3/</link>
+      <pubDate>Thu, 16 Sep 2021 18:27:41 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/java/%E7%BB%A7%E6%89%BF%E7%9B%B8%E5%85%B3/</guid>
+      <description>用法  import private,public,default,protected一些属性 this final 组合  import(不同包之间的数据引用) package com.object.test; import com.object.test2.User;//import 另外一个包 //import com.object.test2.*引入包内所有的内容，但是会降低编译速度，但是不会降低运行速度  //这两个都有date import java.sql.Date; import java.util.*; import static com.object.test2.Student.school;//倒入静态属性，注意static  import static java.lang.Math.*; import static java.lang.Math.PI; public class Test { public static void main(String[] args) { // com.object.test2.User u = new com.object.test2.User();不import  User u= new User();//import  u.login(); java.util.Date d =new java.util.Date();//因为两个import 里都有date,所有需要make specify  System.out.println(PI);//正常需要写成Math.PI,这个有点像c 中的define  System.out.println(random()); System.out.println(school); } }  private,public,default,protected private 只属于该类 default 属于该类和同一个包 protected 属于该类和同一个包和子类，但是不同一个包就只属于它的子类  该子类只能通过方法引用super的protected的属性，不能用对象的protected属性</description>
+    </item>
+    
     <item>
       <title>tmux 简单使用</title>
       <link>https://jessicazzzzzz.github.io/terminal/terminal/</link>

@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>多态 // 小白博客</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="小白" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://jessicazzzzzz.github.io/css/main.min.4a7ec8660f9a44b08c4da97c5f2e31b1192df1d4d0322e65c0dbbc6ecb1b863f.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="多态"/>
+<meta name="twitter:description" content="简单的封装  就是设置一定的权限
+ package com.object.cap; /* 这是一个简单的 javabean ,testcap1 中调用了它，可以看到一次权限设置的不同， 导致用法的不同 */ public class Testcap { private String name;//Testcap1中都不可用  int age; private boolean flag; public String getName(){ return name; } public void setName(String name) { this.name = name; } public void setAge(int age) { if(age&lt;0||age&gt;150){ System.out.println(&#34;invalid age&#34;); }else{ this.age = age; } } public boolean isFlag() { return flag; } public void setFlag(boolean flag) { this.flag = flag; } public int getAge() { return age; } } package com."/>
+
+    <meta property="og:title" content="多态" />
+<meta property="og:description" content="简单的封装  就是设置一定的权限
+ package com.object.cap; /* 这是一个简单的 javabean ,testcap1 中调用了它，可以看到一次权限设置的不同， 导致用法的不同 */ public class Testcap { private String name;//Testcap1中都不可用  int age; private boolean flag; public String getName(){ return name; } public void setName(String name) { this.name = name; } public void setAge(int age) { if(age&lt;0||age&gt;150){ System.out.println(&#34;invalid age&#34;); }else{ this.age = age; } } public boolean isFlag() { return flag; } public void setFlag(boolean flag) { this.flag = flag; } public int getAge() { return age; } } package com." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jessicazzzzzz.github.io/java/%E5%A4%9A%E6%80%81/" /><meta property="article:section" content="java" />
+<meta property="article:published_time" content="2021-09-16T20:40:50+10:00" />
+<meta property="article:modified_time" content="2021-09-16T20:40:50+10:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://jessicazzzzzz.github.io/"><img class="app-header-avatar" src="/girl.jpg" alt="小白" /></a>
+      <h1>小白博客</h1>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>除了生死都是擦伤</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/Jessicazzzzzz/jessicazzzzzz.github.io" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">多态</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Sep 16, 2021
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://jessicazzzzzz.github.io/tags/%E7%BB%A7%E6%89%BF/">继承</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h1 id="简单的封装">简单的封装</h1>
+<blockquote>
+<p>就是设置一定的权限</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.object.cap<span style="color:#f92672">;</span>
+<span style="color:#75715e">/*
+</span><span style="color:#75715e">这是一个简单的 javabean ,testcap1 中调用了它，可以看到一次权限设置的不同，
+</span><span style="color:#75715e">导致用法的不同
+</span><span style="color:#75715e">
+</span><span style="color:#75715e"> */</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Testcap</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">private</span> String name<span style="color:#f92672">;</span><span style="color:#75715e">//Testcap1中都不可用
+</span><span style="color:#75715e"></span>     <span style="color:#66d9ef">int</span> age<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span>  <span style="color:#66d9ef">boolean</span> flag<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getName</span><span style="color:#f92672">(){</span>
+        <span style="color:#66d9ef">return</span>  name<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setName</span><span style="color:#f92672">(</span>String name<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> name<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setAge</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> age<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>age<span style="color:#f92672">&lt;</span>0<span style="color:#f92672">||</span>age<span style="color:#f92672">&gt;</span>150<span style="color:#f92672">){</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;invalid age&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span><span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> age<span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">isFlag</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> flag<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setFlag</span><span style="color:#f92672">(</span><span style="color:#66d9ef">boolean</span> flag<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">flag</span> <span style="color:#f92672">=</span> flag<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getAge</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> age<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.object.cap<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Testcap1</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Testcap t <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Testcap<span style="color:#f92672">();</span>
+        t<span style="color:#f92672">.</span><span style="color:#a6e22e">setAge</span><span style="color:#f92672">(</span>190<span style="color:#f92672">)</span> <span style="color:#f92672">;</span>
+        t<span style="color:#f92672">.</span><span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> 19<span style="color:#f92672">;</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>t<span style="color:#f92672">.</span><span style="color:#a6e22e">getAge</span><span style="color:#f92672">());</span>
+
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><hr>
+<h1 id="多态">多态</h1>
+<blockquote>
+<p>因为各个子类都有不同点，只要parent相同，就可以通过传递child
+参数，来引用方法，因为parent &gt;child</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.object.duotai<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Animal</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">shout</span><span style="color:#f92672">(){</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;animal shout &#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Dog</span> <span style="color:#66d9ef">extends</span> Animal<span style="color:#f92672">{</span>
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">shout</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;wo wo wo&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">class</span>  <span style="color:#a6e22e">Cat</span> <span style="color:#66d9ef">extends</span> Animal<span style="color:#f92672">{</span>
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">shout</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;mow mow mow&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Mouse</span> <span style="color:#66d9ef">extends</span>  Animal<span style="color:#f92672">{</span>
+
+
+<span style="color:#f92672">}</span>
+
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.object.duotai<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">test</span> <span style="color:#f92672">{</span>
+<span style="color:#75715e">//多态，animal 是super;dog ,cat 都是child
+</span><span style="color:#75715e">//如写成static void animalcry(dog a),那么每添一个子类
+</span><span style="color:#75715e">//就得写一个，很不方便，这个就应用而生
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">static</span>  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">animalCry</span><span style="color:#f92672">(</span>Animal a<span style="color:#f92672">){</span>
+        a<span style="color:#f92672">.</span><span style="color:#a6e22e">shout</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Dog d<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Dog<span style="color:#f92672">();</span>
+        animalCry<span style="color:#f92672">(</span>d<span style="color:#f92672">);</span><span style="color:#75715e">//animal a =d or d instanceof Animal =TRUE
+</span><span style="color:#75715e"></span>        animalCry<span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Cat<span style="color:#f92672">());</span>
+
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
