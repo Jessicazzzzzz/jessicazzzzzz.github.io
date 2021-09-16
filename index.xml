@@ -6,7 +6,25 @@
     <description>Recent content on 小白博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Sep 2021 14:30:32 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Sep 2021 13:54:40 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tmux 简单使用</title>
+      <link>https://jessicazzzzzz.github.io/terminal/terminal/</link>
+      <pubDate>Thu, 16 Sep 2021 13:54:40 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/terminal/terminal/</guid>
+      <description>#tmux 简单命令使用
+ 新建窗口 退出 再回去 分离 查看有多少窗口 杀死某个会话 重命名 切换 杀死某个会话 重命名  新建(在原terminal) tmux new -s name
+退出 exit
+再回去 tmux attach -t name
+分离 进程还在，后台执行 tmux detach
+查看有多少窗口 tmux ls
+杀死某个会话 tmux kill-session -t name
+重命名 tmux rename-session -t name changedname
+切换 tmux switch -t name
+按住control+b ,再按d ，是退出，相当于杀手一个窗口 </description>
+    </item>
+    
     <item>
       <title>重载笔记</title>
       <link>https://jessicazzzzzz.github.io/java/%E9%87%8D%E8%BD%BD%E7%AC%94%E8%AE%B0/</link>

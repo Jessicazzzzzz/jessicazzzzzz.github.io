@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>terminal on 小白博客</title>
+    <link>https://jessicazzzzzz.github.io/tags/terminal/</link>
+    <description>Recent content in terminal on 小白博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Sep 2021 13:54:40 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tmux 简单使用</title>
+      <link>https://jessicazzzzzz.github.io/terminal/terminal/</link>
+      <pubDate>Thu, 16 Sep 2021 13:54:40 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/terminal/terminal/</guid>
+      <description>#tmux 简单命令使用
+ 新建窗口 退出 再回去 分离 查看有多少窗口 杀死某个会话 重命名 切换 杀死某个会话 重命名  新建(在原terminal) tmux new -s name
+退出 exit
+再回去 tmux attach -t name
+分离 进程还在，后台执行 tmux detach
+查看有多少窗口 tmux ls
+杀死某个会话 tmux kill-session -t name
+重命名 tmux rename-session -t name changedname
+切换 tmux switch -t name
+按住control+b ,再按d ，是退出，相当于杀手一个窗口 </description>
+    </item>
+    
+    <item>
+      <title>关于terminal的学习</title>
+      <link>https://jessicazzzzzz.github.io/post/terminal%E7%9A%84%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Sun, 05 Sep 2021 21:07:51 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/post/terminal%E7%9A%84%E5%AD%A6%E4%B9%A0/</guid>
+      <description>mac terminal 的学习  最好下载一个新的iterm ,这个更好一点，有很多功能 然后下载oh my zsh，一样功能更多，有很多plugins（插件）可以使用，我注意是为了git 的插件，因为经常不知道自己到了哪个branch，需要反复check 然后就是打开.zshrc 文件 ** (way1)cd ~ ,vi .zshrc ** (way2) 现在vs code中command palette 输入shell command install &amp;lsquo;code&amp;rsquo; command in PATH,一般当你输入shell command ，它会自己pop up出来，然后重新启动vs，就可以用了。 在terminal 中就可以输入code ~/.zshrc   装一些快捷键在terminal中  在打开的zshrc 文件中，通过添加以下  plugins=(git bundler dotenv osx rake last-working-dir websearch ) **terminal 中会自动添加这些
+  一些比较方便的快捷方式   google balabala   就会自动打开打开网页  ofd   自动打开文档  tab   在同一个page下重新打开一个terminal  command+d   在旁边重新打开一个terminal  shift+command+d   在下面重新打开一个terminal  command +w   删除已经开的terminal  dirs -v   显示所有的directories  </description>
+    </item>
+    
+  </channel>
+</rss>
