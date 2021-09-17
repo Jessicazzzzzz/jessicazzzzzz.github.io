@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>接口 // 小白博客</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="小白" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://jessicazzzzzz.github.io/css/main.min.4a7ec8660f9a44b08c4da97c5f2e31b1192df1d4d0322e65c0dbbc6ecb1b863f.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="接口"/>
+<meta name="twitter:description" content="接口 抽象类的使用 字符串   接口  关键字interface,一般来说它比抽象还要简易
+  它的修饰符是public 或者default 接口名跟类名是一样的 接口可以extends继承 常量=public static final ,方法=public abstruct   以下的代码显示了接口的基本工作
+  首先建立接口，那就意味着规范一系列的方法准则，但是它是空的，需要去实现 对象 去实现，用implements 关键字去接口实现 main 方法中使用了 **** 需要注意的是，正常的使用一般都是new 一个对象，除了接口中的static 静态方法，static 方法中不可直接访问非stactic 成员  package com.object.interface1; /* 飞行器的接口 */ public interface Volant { /* 飞行器的最高高度 */ int MAX_FIGHT =100; /* 飞机飞行的方法 */ void fly(); /* 飞机降落的方法 */ void stop(); } interface Honest{ void helpothers(); } package com."/>
+
+    <meta property="og:title" content="接口" />
+<meta property="og:description" content="接口 抽象类的使用 字符串   接口  关键字interface,一般来说它比抽象还要简易
+  它的修饰符是public 或者default 接口名跟类名是一样的 接口可以extends继承 常量=public static final ,方法=public abstruct   以下的代码显示了接口的基本工作
+  首先建立接口，那就意味着规范一系列的方法准则，但是它是空的，需要去实现 对象 去实现，用implements 关键字去接口实现 main 方法中使用了 **** 需要注意的是，正常的使用一般都是new 一个对象，除了接口中的static 静态方法，static 方法中不可直接访问非stactic 成员  package com.object.interface1; /* 飞行器的接口 */ public interface Volant { /* 飞行器的最高高度 */ int MAX_FIGHT =100; /* 飞机飞行的方法 */ void fly(); /* 飞机降落的方法 */ void stop(); } interface Honest{ void helpothers(); } package com." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jessicazzzzzz.github.io/java/%E6%8E%A5%E5%8F%A3/" /><meta property="article:section" content="java" />
+<meta property="article:published_time" content="2021-09-17T16:14:35+10:00" />
+<meta property="article:modified_time" content="2021-09-17T16:14:35+10:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://jessicazzzzzz.github.io/"><img class="app-header-avatar" src="/girl.jpg" alt="小白" /></a>
+      <h1>小白博客</h1>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>除了生死都是擦伤</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/Jessicazzzzzz/jessicazzzzzz.github.io" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">接口</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Sep 17, 2021
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          2 min read
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://jessicazzzzzz.github.io/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">面向对象</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <ul>
+<li><a href="#%E6%8E%A5%E5%8F%A3">接口</a></li>
+<li><a href="#%E6%8A%BD%E8%B1%A1%E7%B1%BB%E7%9A%84%E4%BD%BF%E7%94%A8">抽象类的使用</a></li>
+<li><a href="#%E5%AD%97%E7%AC%A6%E4%B8%B2">字符串</a></li>
+</ul>
+<hr>
+<h1 id="接口">接口</h1>
+<blockquote>
+<p>关键字interface,一般来说它比抽象还要简易</p>
+</blockquote>
+<ol>
+<li>它的修饰符是public 或者default</li>
+<li>接口名跟类名是一样的</li>
+<li>接口可以extends继承</li>
+<li>常量=public static final ,方法=public abstruct</li>
+</ol>
+<blockquote>
+<p>以下的代码显示了接口的基本工作</p>
+</blockquote>
+<ul>
+<li>首先建立接口，那就意味着规范一系列的方法准则，但是它是空的，需要去实现</li>
+<li>对象 去实现，用implements 关键字去接口实现</li>
+<li>main 方法中使用了
+**** 需要注意的是，正常的使用一般都是new 一个对象，除了接口中的static 静态方法，static 方法中不可直接访问非stactic 成员</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.object.interface1<span style="color:#f92672">;</span>
+<span style="color:#75715e">/*
+</span><span style="color:#75715e">飞行器的接口
+</span><span style="color:#75715e"> */</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">Volant</span> <span style="color:#f92672">{</span>
+    <span style="color:#75715e">/*
+</span><span style="color:#75715e">    飞行器的最高高度
+</span><span style="color:#75715e">     */</span>
+    <span style="color:#66d9ef">int</span> MAX_FIGHT <span style="color:#f92672">=</span>100<span style="color:#f92672">;</span>
+    <span style="color:#75715e">/*
+</span><span style="color:#75715e">    飞机飞行的方法
+</span><span style="color:#75715e">     */</span>
+    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">fly</span><span style="color:#f92672">();</span>
+    <span style="color:#75715e">/*
+</span><span style="color:#75715e">     飞机降落的方法
+</span><span style="color:#75715e">     */</span>
+    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">stop</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">interface</span>  <span style="color:#a6e22e">Honest</span><span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">helpothers</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.object.interface1<span style="color:#f92672">;</span>
+<span style="color:#75715e">//一定要实现接口，因为接口是规范，然后你就需要将它实现
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SuperMan</span> <span style="color:#66d9ef">implements</span> Volant<span style="color:#f92672">,</span>Honest<span style="color:#f92672">{</span>
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">fly</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;fly high&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">stop</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;stop slowly&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">helpothers</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;always help each others&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.object.interface1<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Test</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        SuperMan su1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> SuperMan<span style="color:#f92672">();</span>
+        Volant s2 <span style="color:#f92672">=</span><span style="color:#66d9ef">new</span> SuperMan<span style="color:#f92672">();</span>
+        Honest h <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>Honest<span style="color:#f92672">)</span>s2<span style="color:#f92672">;</span>
+        h<span style="color:#f92672">.</span><span style="color:#a6e22e">helpothers</span><span style="color:#f92672">();</span>
+        su1<span style="color:#f92672">.</span><span style="color:#a6e22e">fly</span><span style="color:#f92672">();</span>
+        su1<span style="color:#f92672">.</span><span style="color:#a6e22e">stop</span><span style="color:#f92672">();</span>
+        su1<span style="color:#f92672">.</span><span style="color:#a6e22e">helpothers</span><span style="color:#f92672">();</span>
+        <span style="color:#75715e">//静态的不需要new,可以直接引用class 名
+</span><span style="color:#75715e"></span>        A<span style="color:#f92672">.</span><span style="color:#a6e22e">staticMethod</span><span style="color:#f92672">();</span>
+        Test_A<span style="color:#f92672">.</span><span style="color:#a6e22e">staticMethod</span><span style="color:#f92672">();</span>
+        <span style="color:#75715e">//default 接口
+</span><span style="color:#75715e"></span>        B b  <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Test_B<span style="color:#f92672">();</span>
+        b<span style="color:#f92672">.</span><span style="color:#a6e22e">defaultMethod</span><span style="color:#f92672">();</span>
+        <span style="color:#75715e">//接口的继承测试
+</span><span style="color:#75715e"></span>        TestCDextends test1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> TestCDextends<span style="color:#f92672">();</span>
+        test1<span style="color:#f92672">.</span><span style="color:#a6e22e">method1</span><span style="color:#f92672">();</span>
+        test1<span style="color:#f92672">.</span><span style="color:#a6e22e">method2</span><span style="color:#f92672">();</span>
+        test1<span style="color:#f92672">.</span><span style="color:#a6e22e">method3</span><span style="color:#f92672">();</span>
+
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+<span style="color:#75715e">//静态方法
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">interface</span>  <span style="color:#a6e22e">A</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">staticMethod</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;A.staticmethod.&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Test_A</span> <span style="color:#66d9ef">implements</span>  A<span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">staticMethod</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Test_A.staticmehtod&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span>
+<span style="color:#75715e">//测试default 接口
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">interface</span>  <span style="color:#a6e22e">B</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">default</span>  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">defaultMethod</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;B.staticmethod.&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Test_B</span> <span style="color:#66d9ef">implements</span>  B<span style="color:#f92672">{</span>
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">defaultMethod</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Test_B.defaultmethod&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+<span style="color:#75715e">//这个对象接口实现时，就会有all 所有的方法，因为all不光有自己的，还有继承来的
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TestCDextends</span> <span style="color:#66d9ef">implements</span>  All<span style="color:#f92672">{</span>
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">method2</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;method2&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">method1</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;method1&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">method3</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;method3&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">interface</span>  <span style="color:#a6e22e">C</span><span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">method1</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">interface</span>  <span style="color:#a6e22e">D</span><span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">method2</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">interface</span>  <span style="color:#a6e22e">All</span> <span style="color:#66d9ef">extends</span> C<span style="color:#f92672">,</span>D<span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">method3</span><span style="color:#f92672">();</span>
+
+</code></pre></div><h1 id="抽象类的使用">抽象类的使用</h1>
+<blockquote>
+<p>关键字abstract
+它是一个类，也是定义了一种规范，但是不具体
+当一个对象使用它是只能继承，不能new
+对象继承时，必须具体话abstract的属性</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.object.abstract1<span style="color:#f92672">;</span>
+
+
+<span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Student</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span>  String name<span style="color:#f92672">;</span>
+<span style="color:#75715e">//方法定义了abstract，那么CLASS就必须是abstract
+</span><span style="color:#75715e"></span>     <span style="color:#66d9ef">abstract</span>  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">study</span><span style="color:#f92672">();</span>
+    <span style="color:#66d9ef">abstract</span>  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">exam</span><span style="color:#f92672">();</span>
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getName</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> name<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setName</span><span style="color:#f92672">(</span>String name<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> name<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Student</span><span style="color:#f92672">(</span>String name<span style="color:#f92672">){</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span>name<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#75715e">//无参数构造方法，只要是super，最好加一个，不然
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//子类继承也没有的话，就会报错
+</span><span style="color:#75715e"></span>    Student<span style="color:#f92672">(){</span>
+
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.object.abstract1<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Test</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#75715e">//Student is abstruct,不能new，就建个对象去继承
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">//Student a= new Student();
+</span><span style="color:#75715e"></span>        Student s <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Student1<span style="color:#f92672">();</span>
+        s<span style="color:#f92672">.</span><span style="color:#a6e22e">exam</span><span style="color:#f92672">();</span>
+        s<span style="color:#f92672">.</span><span style="color:#a6e22e">study</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Student1</span> <span style="color:#66d9ef">extends</span> Student<span style="color:#f92672">{</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">study</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;work hard&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">exam</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;100 scores&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+
+</code></pre></div><h1 id="字符串">字符串</h1>
+<blockquote>
+<p>它是一个大类，比c简单很多，记住它的常用方法就行了</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.object.stringlearning<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Test</span> <span style="color:#f92672">{</span>
+   <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+      String str1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;abcdedede&#34;</span><span style="color:#f92672">;</span>
+      String str2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> String<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;abcdedede&#34;</span><span style="color:#f92672">);</span>
+      String str3 <span style="color:#f92672">=</span><span style="color:#e6db74">&#34;abcDEDEDE&#34;</span><span style="color:#f92672">;</span>
+      String str4 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;de&#34;</span><span style="color:#f92672">;</span>
+      String str41<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;de&#34;</span><span style="color:#f92672">;</span>
+      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>str4<span style="color:#f92672">==</span>str41<span style="color:#f92672">);</span>
+      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>str1<span style="color:#f92672">.</span><span style="color:#a6e22e">charAt</span><span style="color:#f92672">(</span>0<span style="color:#f92672">));</span>
+      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>str1<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">());</span>
+      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>str3<span style="color:#f92672">.</span><span style="color:#a6e22e">equalsIgnoreCase</span><span style="color:#f92672">(</span>str1<span style="color:#f92672">));</span>
+      <span style="color:#75715e">//查找字符串中是否有字符串，如果有就返回出现在字符串的位置，如果出错就返回-1
+</span><span style="color:#75715e"></span>      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>str2<span style="color:#f92672">.</span><span style="color:#a6e22e">indexOf</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;de&#34;</span><span style="color:#f92672">));</span>
+      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>str2<span style="color:#f92672">.</span><span style="color:#a6e22e">lastIndexOf</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;de&#34;</span><span style="color:#f92672">));</span>
+      <span style="color:#75715e">//一般来说是比较字符串的值
+</span><span style="color:#75715e"></span>      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>str1<span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>str2<span style="color:#f92672">));</span>
+      <span style="color:#75715e">//这个是字符串的位置，而它们存放的位置是不一样的
+</span><span style="color:#75715e"></span>      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>str1<span style="color:#f92672">==</span>str2<span style="color:#f92672">);</span><span style="color:#75715e">//false,它们的位置是不一样的
+</span><span style="color:#75715e"></span>      String str5 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;abcdefgh&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">replace</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;d&#34;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;f&#34;</span><span style="color:#f92672">);</span>
+      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>str5<span style="color:#f92672">);</span>
+
+      <span style="color:#75715e">//prefix 前缀，是否是以某个字符段开始，返回boolean
+</span><span style="color:#75715e"></span>      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sxt,i love u&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">startsWith</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sxt&#34;</span><span style="color:#f92672">));</span><span style="color:#75715e">//true
+</span><span style="color:#75715e"></span>      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sxt,i love u&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">endsWith</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sxt&#34;</span><span style="color:#f92672">));</span><span style="color:#75715e">//false
+</span><span style="color:#75715e"></span>      <span style="color:#75715e">//substring 截取字符串
+</span><span style="color:#75715e"></span>      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>str5<span style="color:#f92672">.</span><span style="color:#a6e22e">substring</span><span style="color:#f92672">(</span>2<span style="color:#f92672">));</span><span style="color:#75715e">//cfefgh
+</span><span style="color:#75715e"></span>      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>str5<span style="color:#f92672">.</span><span style="color:#a6e22e">substring</span><span style="color:#f92672">(</span>2<span style="color:#f92672">,</span>5<span style="color:#f92672">));</span>
+      <span style="color:#75715e">//cfe,5-2=3，表示截取的长度，所以考虑长度，不要考虑index
+</span><span style="color:#75715e"></span>      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>str5<span style="color:#f92672">.</span><span style="color:#a6e22e">toUpperCase</span><span style="color:#f92672">());</span>
+      <span style="color:#75715e">//去除首尾空格，可以用于用户登陆名的配对
+</span><span style="color:#75715e"></span>      String str6 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;     s o rry &#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">trim</span><span style="color:#f92672">();</span>
+      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>str6<span style="color:#f92672">);</span>
+      <span style="color:#75715e">//可以用replace 替换空格
+</span><span style="color:#75715e"></span>      String str7 <span style="color:#f92672">=</span> str6<span style="color:#f92672">.</span><span style="color:#a6e22e">replace</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">);</span>
+      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>str7<span style="color:#f92672">);</span>
+   <span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span>
+
+</code></pre></div>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
