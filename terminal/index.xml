@@ -22,7 +22,7 @@
 杀死某个会话 tmux kill-session -t name
 重命名 tmux rename-session -t name changedname
 切换 tmux switch -t name
-按住control+b ,再按d ，是退出，相当于杀手一个窗口 </description>
+按住control+b ,再按d ，是退出，相当于detach </description>
     </item>
     
   </channel>

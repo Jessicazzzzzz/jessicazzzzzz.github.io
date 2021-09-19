@@ -6,7 +6,17 @@
     <description>Recent content in 面向对象 on 小白博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Sep 2021 16:14:35 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Sep 2021 10:13:47 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>内部类和匿名类</title>
+      <link>https://jessicazzzzzz.github.io/java/%E5%86%85%E9%83%A8%E7%B1%BB%E5%92%8C%E5%8C%BF%E5%90%8D%E7%B1%BB/</link>
+      <pubDate>Sun, 19 Sep 2021 10:13:47 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/java/%E5%86%85%E9%83%A8%E7%B1%BB%E5%92%8C%E5%8C%BF%E5%90%8D%E7%B1%BB/</guid>
+      <description>内部类和匿名类  做个了解，一般分为成员，匿名和局部内部类。 下面的代码是内部类和匿名类的基本使用
+ package com.object.annomyos; public class Testniming { //这是定义了一个方法,A是接口不能new ，但是可以作为类型  public void test (A a){ a.run(); } public static void main(String[] args) { Testniming m = new Testniming(); m.test(new B()); //匿名定义，只能使用一次,因为它没有对象  m.test(new A(){ @Override public void run() { System.out.println(&amp;#34;run slow&amp;#34;); } }); //这又是一个新的，注意写的方式  m.test(new A(){ @Override public void run() { System.out.println(&amp;#34;another run &amp;#34;); } }); } } //普通方法 class B implements A{ @Override public void run() { System.</description>
+    </item>
+    
     <item>
       <title>接口</title>
       <link>https://jessicazzzzzz.github.io/java/%E6%8E%A5%E5%8F%A3/</link>

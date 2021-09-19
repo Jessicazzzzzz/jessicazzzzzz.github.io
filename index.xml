@@ -6,7 +6,29 @@
     <description>Recent content on 小白博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Sep 2021 16:14:35 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Sep 2021 12:02:09 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数组</title>
+      <link>https://jessicazzzzzz.github.io/java/%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Sun, 19 Sep 2021 12:02:09 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/java/%E6%95%B0%E7%BB%84/</guid>
+      <description>数组也是对象 将数组跟表格的形式对应起来理解,表头就是class的属性，每一行就是一个对象 数组在内存中分布图
+下面的代码是展示一部分数组的初始化和打印  数组初始化   需要注意静态初始化的时候必须紧跟在声明后
+  数组的拷贝   arraycopy 方法的用法
+  for 循环的基本用法  package com.arraylearning; public class Test1 { public static void main(String[] args) { //静态初始化必须在声明后直接初始化  Man[] mans = {new Man(01,&amp;#34;a&amp;#34;), new Man(02,&amp;#34;b&amp;#34;), new Man(03,&amp;#34;c&amp;#34;), new Man(04,&amp;#34;d&amp;#34;), new Man(05,&amp;#34;e&amp;#34;) }; //数组的copy  Man[] mans1 = new Man[5]; System.arraycopy(mans,0,mans1,0,mans.length); for(Man x:mans1){ System.out.println(x); } for (int i=0;i&amp;lt;mans.length;i++){ Man m = mans[i]; System.out.println(m); } //把数组mans遍历一遍，然后将每一m取出来给对象Man  //它一般用于读取  for( Man m:mans){ System.</description>
+    </item>
+    
+    <item>
+      <title>内部类和匿名类</title>
+      <link>https://jessicazzzzzz.github.io/java/%E5%86%85%E9%83%A8%E7%B1%BB%E5%92%8C%E5%8C%BF%E5%90%8D%E7%B1%BB/</link>
+      <pubDate>Sun, 19 Sep 2021 10:13:47 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/java/%E5%86%85%E9%83%A8%E7%B1%BB%E5%92%8C%E5%8C%BF%E5%90%8D%E7%B1%BB/</guid>
+      <description>内部类和匿名类  做个了解，一般分为成员，匿名和局部内部类。 下面的代码是内部类和匿名类的基本使用
+ package com.object.annomyos; public class Testniming { //这是定义了一个方法,A是接口不能new ，但是可以作为类型  public void test (A a){ a.run(); } public static void main(String[] args) { Testniming m = new Testniming(); m.test(new B()); //匿名定义，只能使用一次,因为它没有对象  m.test(new A(){ @Override public void run() { System.out.println(&amp;#34;run slow&amp;#34;); } }); //这又是一个新的，注意写的方式  m.test(new A(){ @Override public void run() { System.out.println(&amp;#34;another run &amp;#34;); } }); } } //普通方法 class B implements A{ @Override public void run() { System.</description>
+    </item>
+    
     <item>
       <title>接口</title>
       <link>https://jessicazzzzzz.github.io/java/%E6%8E%A5%E5%8F%A3/</link>
@@ -53,7 +75,7 @@
 杀死某个会话 tmux kill-session -t name
 重命名 tmux rename-session -t name changedname
 切换 tmux switch -t name
-按住control+b ,再按d ，是退出，相当于杀手一个窗口 </description>
+按住control+b ,再按d ，是退出，相当于detach </description>
     </item>
     
     <item>

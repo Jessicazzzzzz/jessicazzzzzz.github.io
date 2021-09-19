@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>数组 // 小白博客</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="小白" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://jessicazzzzzz.github.io/css/main.min.4a7ec8660f9a44b08c4da97c5f2e31b1192df1d4d0322e65c0dbbc6ecb1b863f.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="数组"/>
+<meta name="twitter:description" content="数组也是对象 将数组跟表格的形式对应起来理解,表头就是class的属性，每一行就是一个对象 数组在内存中分布图
+下面的代码是展示一部分数组的初始化和打印  数组初始化   需要注意静态初始化的时候必须紧跟在声明后
+  数组的拷贝   arraycopy 方法的用法
+  for 循环的基本用法  package com.arraylearning; public class Test1 { public static void main(String[] args) { //静态初始化必须在声明后直接初始化  Man[] mans = {new Man(01,&#34;a&#34;), new Man(02,&#34;b&#34;), new Man(03,&#34;c&#34;), new Man(04,&#34;d&#34;), new Man(05,&#34;e&#34;) }; //数组的copy  Man[] mans1 = new Man[5]; System.arraycopy(mans,0,mans1,0,mans.length); for(Man x:mans1){ System.out.println(x); } for (int i=0;i&lt;mans.length;i&#43;&#43;){ Man m = mans[i]; System.out.println(m); } //把数组mans遍历一遍，然后将每一m取出来给对象Man  //它一般用于读取  for( Man m:mans){ System."/>
+
+    <meta property="og:title" content="数组" />
+<meta property="og:description" content="数组也是对象 将数组跟表格的形式对应起来理解,表头就是class的属性，每一行就是一个对象 数组在内存中分布图
+下面的代码是展示一部分数组的初始化和打印  数组初始化   需要注意静态初始化的时候必须紧跟在声明后
+  数组的拷贝   arraycopy 方法的用法
+  for 循环的基本用法  package com.arraylearning; public class Test1 { public static void main(String[] args) { //静态初始化必须在声明后直接初始化  Man[] mans = {new Man(01,&#34;a&#34;), new Man(02,&#34;b&#34;), new Man(03,&#34;c&#34;), new Man(04,&#34;d&#34;), new Man(05,&#34;e&#34;) }; //数组的copy  Man[] mans1 = new Man[5]; System.arraycopy(mans,0,mans1,0,mans.length); for(Man x:mans1){ System.out.println(x); } for (int i=0;i&lt;mans.length;i&#43;&#43;){ Man m = mans[i]; System.out.println(m); } //把数组mans遍历一遍，然后将每一m取出来给对象Man  //它一般用于读取  for( Man m:mans){ System." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jessicazzzzzz.github.io/java/%E6%95%B0%E7%BB%84/" /><meta property="article:section" content="java" />
+<meta property="article:published_time" content="2021-09-19T12:02:09+10:00" />
+<meta property="article:modified_time" content="2021-09-19T12:02:09+10:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://jessicazzzzzz.github.io/"><img class="app-header-avatar" src="/girl.jpg" alt="小白" /></a>
+      <h1>小白博客</h1>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>除了生死都是擦伤</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/Jessicazzzzzz/jessicazzzzzz.github.io" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">数组</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Sep 19, 2021
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          3 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h1 id="数组也是对象">数组也是对象</h1>
+<h4 id="将数组跟表格的形式对应起来理解表头就是class的属性每一行就是一个对象">将数组跟表格的形式对应起来理解,表头就是class的属性，每一行就是一个对象</h4>
+<p><a href="https://gitmind.com/app/flowchart/2d63936954">数组在内存中分布图</a></p>
+<h1 id="下面的代码是展示一部分数组的初始化和打印">下面的代码是展示一部分数组的初始化和打印</h1>
+<ul>
+<li>数组初始化</li>
+</ul>
+<blockquote>
+<p>需要注意静态初始化的时候必须紧跟在声明后</p>
+</blockquote>
+<ul>
+<li>数组的拷贝</li>
+</ul>
+<blockquote>
+<p>arraycopy 方法的用法</p>
+</blockquote>
+<ul>
+<li>for 循环的基本用法</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.arraylearning<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Test1</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+
+    <span style="color:#75715e">//静态初始化必须在声明后直接初始化
+</span><span style="color:#75715e"></span>      Man<span style="color:#f92672">[]</span> mans <span style="color:#f92672">=</span> <span style="color:#f92672">{</span><span style="color:#66d9ef">new</span> Man<span style="color:#f92672">(</span>01<span style="color:#f92672">,</span><span style="color:#e6db74">&#34;a&#34;</span><span style="color:#f92672">),</span>
+                 <span style="color:#66d9ef">new</span> Man<span style="color:#f92672">(</span>02<span style="color:#f92672">,</span><span style="color:#e6db74">&#34;b&#34;</span><span style="color:#f92672">),</span>
+            <span style="color:#66d9ef">new</span> Man<span style="color:#f92672">(</span>03<span style="color:#f92672">,</span><span style="color:#e6db74">&#34;c&#34;</span><span style="color:#f92672">),</span>
+        <span style="color:#66d9ef">new</span> Man<span style="color:#f92672">(</span>04<span style="color:#f92672">,</span><span style="color:#e6db74">&#34;d&#34;</span><span style="color:#f92672">),</span>
+                <span style="color:#66d9ef">new</span> Man<span style="color:#f92672">(</span>05<span style="color:#f92672">,</span><span style="color:#e6db74">&#34;e&#34;</span><span style="color:#f92672">)</span>
+
+    <span style="color:#f92672">};</span>
+      <span style="color:#75715e">//数组的copy
+</span><span style="color:#75715e"></span>      Man<span style="color:#f92672">[]</span> mans1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Man<span style="color:#f92672">[</span>5<span style="color:#f92672">];</span>
+      System<span style="color:#f92672">.</span><span style="color:#a6e22e">arraycopy</span><span style="color:#f92672">(</span>mans<span style="color:#f92672">,</span>0<span style="color:#f92672">,</span>mans1<span style="color:#f92672">,</span>0<span style="color:#f92672">,</span>mans<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">);</span>
+      <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span>Man x<span style="color:#f92672">:</span>mans1<span style="color:#f92672">){</span>
+          System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>x<span style="color:#f92672">);</span>
+      <span style="color:#f92672">}</span>
+
+
+      <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>0<span style="color:#f92672">;</span>i<span style="color:#f92672">&lt;</span>mans<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span>i<span style="color:#f92672">++){</span>
+          Man m <span style="color:#f92672">=</span> mans<span style="color:#f92672">[</span>i<span style="color:#f92672">];</span>
+          System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>m<span style="color:#f92672">);</span>
+      <span style="color:#f92672">}</span>
+      <span style="color:#75715e">//把数组mans遍历一遍，然后将每一m取出来给对象Man
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">//它一般用于读取
+</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span> Man  m<span style="color:#f92672">:</span>mans<span style="color:#f92672">){</span>
+          System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>m<span style="color:#f92672">);</span>
+      <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Man</span><span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> id<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String name<span style="color:#f92672">;</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getId</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> id<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setId</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> id<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">=</span> id<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getName</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> name<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setName</span><span style="color:#f92672">(</span>String name<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> name<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#75715e">//重写，本来是打印hashcode
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">toString</span><span style="color:#f92672">(){</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">+</span>id<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;,name&#34;</span><span style="color:#f92672">+</span><span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Man</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> id<span style="color:#f92672">,</span> String name<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">=</span> id<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> name<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#75715e">//如果你创建了有参数的构造器，那么无参数的就需要你自己加
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">public</span>  <span style="color:#a6e22e">Man</span><span style="color:#f92672">(){</span>
+
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+
+</code></pre></div><h1 id="二维数组">二维数组</h1>
+<h4 id="因为数组也是对象所以当new了一个数组对象的时候它还可以将这些数组对象再放进一组数组中相当于表格一个对象是有很多属性的它就相当于一个数组然后将n个这样的表格对象放到一个数组中去就形成了表格那也就是二维数组的形成">因为数组也是对象，所以当new了一个数组对象的时候，它还可以将这些数组对象再放进一组数组中，相当于表格一个对象是有很多属性的，它就相当于一个数组，然后将n个这样的表格对象放到一个数组中去，就形成了表格，那也就是二维数组的形成。</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.arraylearning.utlarray<span style="color:#f92672">;</span>
+
+<span style="color:#75715e">/*
+</span><span style="color:#75715e">使用javabean和数组存储表格信息
+</span><span style="color:#75715e"> */</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Test3</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+
+        Emp emp0 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Emp<span style="color:#f92672">(</span>1001<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;gao1&#34;</span><span style="color:#f92672">,</span> 18<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;program&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;2009-10-10&#34;</span><span style="color:#f92672">);</span>
+
+        Emp emp1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Emp<span style="color:#f92672">(</span>1002<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;gao2&#34;</span><span style="color:#f92672">,</span> 28<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;program&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;2009-10-10&#34;</span><span style="color:#f92672">);</span>
+        Emp emp2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Emp<span style="color:#f92672">(</span>1003<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;gao3&#34;</span><span style="color:#f92672">,</span> 38<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;program&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;2009-10-10&#34;</span><span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">//way1
+</span><span style="color:#75715e"></span>       <span style="color:#75715e">// Emp[] emps={emp0,emp1,emp2};
+</span><span style="color:#75715e"></span>        Emp<span style="color:#f92672">[]</span> emps <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Emp<span style="color:#f92672">[</span>3<span style="color:#f92672">];</span>
+        emps<span style="color:#f92672">[</span>0<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> emp0<span style="color:#f92672">;</span>
+        emps<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span> <span style="color:#f92672">=</span>emp1<span style="color:#f92672">;</span>
+        emps<span style="color:#f92672">[</span>2<span style="color:#f92672">]</span> <span style="color:#f92672">=</span>emp2<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>0<span style="color:#f92672">;</span>i<span style="color:#f92672">&lt;</span> emps<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span>i<span style="color:#f92672">++){</span>
+            <span style="color:#75715e">//toString()method不需要打出来了
+</span><span style="color:#75715e"></span>            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>emps<span style="color:#f92672">[</span>i<span style="color:#f92672">]);</span>
+        <span style="color:#f92672">}</span>
+
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Emp</span><span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span>  <span style="color:#66d9ef">int</span> id<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String name<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> age<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span>  String job<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String hiradate<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Emp</span><span style="color:#f92672">(){}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Emp</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> id<span style="color:#f92672">,</span> String name<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> age<span style="color:#f92672">,</span> String job<span style="color:#f92672">,</span> String hiradate<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">=</span> id<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> name<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> age<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">job</span> <span style="color:#f92672">=</span> job<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">hiradate</span> <span style="color:#f92672">=</span> hiradate<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">toString</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#75715e">//use getId 比较好，便于程序修改
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Emp{&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;id=&#34;</span> <span style="color:#f92672">+</span> getId<span style="color:#f92672">()</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;, name=&#39;&#34;</span> <span style="color:#f92672">+</span> name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;\&#39;&#39;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;, age=&#34;</span> <span style="color:#f92672">+</span> age <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;, job=&#39;&#34;</span> <span style="color:#f92672">+</span> job <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;\&#39;&#39;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;, hiradate=&#39;&#34;</span> <span style="color:#f92672">+</span> hiradate <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;\&#39;&#39;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#39;}&#39;</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> String  <span style="color:#a6e22e">getId</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> id<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;号&#34;</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setId</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> id<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">=</span> id<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getName</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> name<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setName</span><span style="color:#f92672">(</span>String name<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> name<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getAge</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> age<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setAge</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> age<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> age<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getJob</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> job<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setJob</span><span style="color:#f92672">(</span>String job<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">job</span> <span style="color:#f92672">=</span> job<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getHiradate</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> hiradate<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setHiradate</span><span style="color:#f92672">(</span>String hiradate<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">hiradate</span> <span style="color:#f92672">=</span> hiradate<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+
+</code></pre></div><hr>
+<h1 id="这个作业是对数组的学习应用">这个作业是对数组的学习应用</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.arraylearning.utlarray<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.util.Scanner<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Hometest</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+        Goods staff1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Goods<span style="color:#f92672">(</span>1<span style="color:#f92672">,</span><span style="color:#e6db74">&#34;百战牌鼠标&#34;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;BZ_001&#34;</span><span style="color:#f92672">,</span>99<span style="color:#f92672">.</span><span style="color:#a6e22e">21</span><span style="color:#f92672">,</span>0<span style="color:#f92672">.</span><span style="color:#a6e22e">9</span><span style="color:#f92672">);</span>
+        Goods staff2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Goods<span style="color:#f92672">(</span>2<span style="color:#f92672">,</span><span style="color:#e6db74">&#34;键盘侠玩偶&#34;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;WO_102&#34;</span><span style="color:#f92672">,</span>403<span style="color:#f92672">.</span><span style="color:#a6e22e">00</span><span style="color:#f92672">,</span>0<span style="color:#f92672">.</span><span style="color:#a6e22e">7</span><span style="color:#f92672">);</span>
+        Goods staff3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Goods<span style="color:#f92672">(</span>3<span style="color:#f92672">,</span><span style="color:#e6db74">&#34;实战java程序设计&#34;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;BK_001&#34;</span><span style="color:#f92672">,</span>89<span style="color:#f92672">.</span><span style="color:#a6e22e">00</span><span style="color:#f92672">,</span>0<span style="color:#f92672">.</span><span style="color:#a6e22e">8</span><span style="color:#f92672">);</span>
+        Goods staff4 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Goods<span style="color:#f92672">(</span>4<span style="color:#f92672">,</span><span style="color:#e6db74">&#34;高器牌西服&#34;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;GQ_XF_12&#34;</span><span style="color:#f92672">,</span>700<span style="color:#f92672">.</span><span style="color:#a6e22e">00</span><span style="color:#f92672">,</span>0<span style="color:#f92672">.</span><span style="color:#a6e22e">5</span><span style="color:#f92672">);</span>
+        Goods staff5 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Goods<span style="color:#f92672">(</span>5<span style="color:#f92672">,</span><span style="color:#e6db74">&#34;大米牌手机&#34;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;DM_PH_13&#34;</span><span style="color:#f92672">,</span>900<span style="color:#f92672">.</span><span style="color:#a6e22e">00</span><span style="color:#f92672">,</span>0<span style="color:#f92672">.</span><span style="color:#a6e22e">3</span><span style="color:#f92672">);</span>
+        Goods<span style="color:#f92672">[]</span> allinfo <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Goods<span style="color:#f92672">[</span>5<span style="color:#f92672">];</span>
+      allinfo<span style="color:#f92672">[</span>0<span style="color:#f92672">]=</span>staff1<span style="color:#f92672">;</span>
+      allinfo<span style="color:#f92672">[</span>1<span style="color:#f92672">]=</span>staff2<span style="color:#f92672">;</span>
+      allinfo<span style="color:#f92672">[</span>2<span style="color:#f92672">]=</span>staff3<span style="color:#f92672">;</span>
+      allinfo<span style="color:#f92672">[</span>3<span style="color:#f92672">]=</span>staff4<span style="color:#f92672">;</span>
+      allinfo<span style="color:#f92672">[</span>4<span style="color:#f92672">]=</span>staff5<span style="color:#f92672">;</span>
+
+
+
+        <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>0<span style="color:#f92672">;</span>i<span style="color:#f92672">&lt;</span>allinfo<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span>i<span style="color:#f92672">++){</span>
+
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>allinfo<span style="color:#f92672">[</span>i<span style="color:#f92672">]);</span>
+
+        <span style="color:#f92672">}</span> 
+        <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>0<span style="color:#f92672">;</span>i<span style="color:#f92672">&lt;</span>allinfo<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span>i<span style="color:#f92672">++){</span>
+            allinfo<span style="color:#f92672">[</span>i<span style="color:#f92672">].</span><span style="color:#a6e22e">search</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+ <span style="color:#f92672">}</span>
+
+    <span style="color:#f92672">}</span>
+
+
+
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Goods</span><span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> id<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String goodsName<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String type<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">double</span> price<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">double</span> discount<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Goods</span><span style="color:#f92672">(){}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Goods</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> id<span style="color:#f92672">,</span> String goodsName<span style="color:#f92672">,</span> String type<span style="color:#f92672">,</span> <span style="color:#66d9ef">double</span> price<span style="color:#f92672">,</span> <span style="color:#66d9ef">double</span> discount<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">=</span> id<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">goodsName</span> <span style="color:#f92672">=</span> goodsName<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">type</span> <span style="color:#f92672">=</span> type<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">price</span> <span style="color:#f92672">=</span> price<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">discount</span> <span style="color:#f92672">=</span> discount<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#75715e">//创建一个方法，如果输入价格大于购买就返回所有商品
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">search</span><span style="color:#f92672">(</span><span style="color:#66d9ef">double</span> i<span style="color:#f92672">){</span>
+        <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>i<span style="color:#f92672">&lt;</span>getFinalPrice<span style="color:#f92672">()){</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">());</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">toString</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Goods{&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;id=&#34;</span> <span style="color:#f92672">+</span> getId<span style="color:#f92672">()</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;, goodsName=&#39;&#34;</span> <span style="color:#f92672">+</span> getGoodsName<span style="color:#f92672">()+</span> <span style="color:#e6db74">&#39;\&#39;&#39;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;, type=&#39;&#34;</span> <span style="color:#f92672">+</span> getType<span style="color:#f92672">()+</span> <span style="color:#e6db74">&#39;\&#39;&#39;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;, price=&#34;</span> <span style="color:#f92672">+</span> getPrice<span style="color:#f92672">()+</span>
+                <span style="color:#e6db74">&#34;, discount=&#34;</span> <span style="color:#f92672">+</span> getDiscount<span style="color:#f92672">()</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#39;}&#39;</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getType</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> type<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setType</span><span style="color:#f92672">(</span>String type<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">type</span> <span style="color:#f92672">=</span> type<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getGoodsName</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> goodsName<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setGoodsName</span><span style="color:#f92672">(</span>String goodsName<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">goodsName</span> <span style="color:#f92672">=</span> goodsName<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getId</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> id<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setId</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> id<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">=</span> id<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">double</span> <span style="color:#a6e22e">getPrice</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> price<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setPrice</span><span style="color:#f92672">(</span><span style="color:#66d9ef">double</span> price<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">price</span> <span style="color:#f92672">=</span> price<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">double</span> <span style="color:#a6e22e">getDiscount</span><span style="color:#f92672">(){</span>
+        <span style="color:#66d9ef">return</span>  discount<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">double</span> <span style="color:#a6e22e">getFinalPrice</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">price</span><span style="color:#f92672">*</span>discount<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setDiscount</span><span style="color:#f92672">(</span><span style="color:#66d9ef">double</span> discount<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">discount</span> <span style="color:#f92672">=</span> discount<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+
+<span style="color:#f92672">}</span>
+</code></pre></div>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
