@@ -13,7 +13,7 @@
       <pubDate>Thu, 09 Sep 2021 21:21:07 +1000</pubDate>
       
       <guid>https://jessicazzzzzz.github.io/linux/rm-mkdir/</guid>
-      <description>创建文件 touch filename 建立文档 mkdir dirname 将文件移到文件夹 mv filename dirname </description>
+      <description>创建文件 touch filename 建立文档 mkdir dirname 将文件移到文件夹 mv filename dirname 删除文件夹 `` rmdir dirname</description>
     </item>
     
   </channel>

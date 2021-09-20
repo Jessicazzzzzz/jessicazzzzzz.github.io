@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>包装类 // 小白博客</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="小白" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://jessicazzzzzz.github.io/css/main.min.4a7ec8660f9a44b08c4da97c5f2e31b1192df1d4d0322e65c0dbbc6ecb1b863f.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="包装类"/>
+<meta name="twitter:description" content="包装类就是把java 的基本数据类型包装成一个对象，然后他们之间可以互相转换  自动装箱和拆箱是编译器帮你完成的，jvm还是需要转换的
+ public class TestWrapper { public static void main(String[] args) { //int --&gt;objects  Integer i= new Integer(300); Integer m =Integer.valueOf(300); //包装类转换为基本数据类型  double d = m.doubleValue(); //将字符串转换为数据类型  Integer n=Integer.valueOf(&#34;234&#34;); Integer n1= Integer.parseInt(&#34;234&#34;); //将包装类对象转成字符串  String str = n.toString(); System.out.println(Integer.MAX_VALUE); //自动装箱,编译器帮你修改成Interger a= Interger.valueof(300)  Integer a= 300; //自动拆箱,a= a.intValue();  int b = a; //对象为空，调用它的属性和方法就会出现空指针，会报错,因为不能调用  //Integer c =null;空对象不能调方法  //int c1 =c;//编译器会改成c.intValue()  //包装类的缓存问题  Integer m1 =4000; Integer m2 = 4000; //当数字在-128 ～127，返回缓存数，  // 也就是说如果数值在这个范围之内，就从这个数组中返回这个数值  Integer m3 =123; Integer m4 =123; System."/>
+
+    <meta property="og:title" content="包装类" />
+<meta property="og:description" content="包装类就是把java 的基本数据类型包装成一个对象，然后他们之间可以互相转换  自动装箱和拆箱是编译器帮你完成的，jvm还是需要转换的
+ public class TestWrapper { public static void main(String[] args) { //int --&gt;objects  Integer i= new Integer(300); Integer m =Integer.valueOf(300); //包装类转换为基本数据类型  double d = m.doubleValue(); //将字符串转换为数据类型  Integer n=Integer.valueOf(&#34;234&#34;); Integer n1= Integer.parseInt(&#34;234&#34;); //将包装类对象转成字符串  String str = n.toString(); System.out.println(Integer.MAX_VALUE); //自动装箱,编译器帮你修改成Interger a= Interger.valueof(300)  Integer a= 300; //自动拆箱,a= a.intValue();  int b = a; //对象为空，调用它的属性和方法就会出现空指针，会报错,因为不能调用  //Integer c =null;空对象不能调方法  //int c1 =c;//编译器会改成c.intValue()  //包装类的缓存问题  Integer m1 =4000; Integer m2 = 4000; //当数字在-128 ～127，返回缓存数，  // 也就是说如果数值在这个范围之内，就从这个数组中返回这个数值  Integer m3 =123; Integer m4 =123; System." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jessicazzzzzz.github.io/java/%E5%8C%85%E8%A3%85%E7%B1%BB/" /><meta property="article:section" content="java" />
+<meta property="article:published_time" content="2021-09-20T11:28:48+10:00" />
+<meta property="article:modified_time" content="2021-09-20T11:28:48+10:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://jessicazzzzzz.github.io/"><img class="app-header-avatar" src="/girl.jpg" alt="小白" /></a>
+      <h1>小白博客</h1>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>除了生死都是擦伤</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/Jessicazzzzzz/jessicazzzzzz.github.io" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">包装类</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Sep 20, 2021
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h3 id="包装类就是把java-的基本数据类型包装成一个对象然后他们之间可以互相转换">包装类就是把java 的基本数据类型包装成一个对象，然后他们之间可以互相转换</h3>
+<blockquote>
+<p>自动装箱和拆箱是编译器帮你完成的，jvm还是需要转换的</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TestWrapper</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#75715e">//int --&gt;objects
+</span><span style="color:#75715e"></span>        Integer i<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Integer<span style="color:#f92672">(</span>300<span style="color:#f92672">);</span>
+        Integer m <span style="color:#f92672">=</span>Integer<span style="color:#f92672">.</span><span style="color:#a6e22e">valueOf</span><span style="color:#f92672">(</span>300<span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">//包装类转换为基本数据类型
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">double</span> d <span style="color:#f92672">=</span> m<span style="color:#f92672">.</span><span style="color:#a6e22e">doubleValue</span><span style="color:#f92672">();</span>
+        <span style="color:#75715e">//将字符串转换为数据类型
+</span><span style="color:#75715e"></span>        Integer n<span style="color:#f92672">=</span>Integer<span style="color:#f92672">.</span><span style="color:#a6e22e">valueOf</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;234&#34;</span><span style="color:#f92672">);</span>
+        Integer n1<span style="color:#f92672">=</span> Integer<span style="color:#f92672">.</span><span style="color:#a6e22e">parseInt</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;234&#34;</span><span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">//将包装类对象转成字符串
+</span><span style="color:#75715e"></span>        String str <span style="color:#f92672">=</span> n<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>Integer<span style="color:#f92672">.</span><span style="color:#a6e22e">MAX_VALUE</span><span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">//自动装箱,编译器帮你修改成Interger a= Interger.valueof(300)
+</span><span style="color:#75715e"></span>        Integer a<span style="color:#f92672">=</span> 300<span style="color:#f92672">;</span>
+        <span style="color:#75715e">//自动拆箱,a= a.intValue();
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">int</span> b <span style="color:#f92672">=</span> a<span style="color:#f92672">;</span>
+
+        <span style="color:#75715e">//对象为空，调用它的属性和方法就会出现空指针，会报错,因为不能调用
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">//Integer c =null;空对象不能调方法
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">//int c1 =c;//编译器会改成c.intValue()
+</span><span style="color:#75715e"></span>
+
+
+        <span style="color:#75715e">//包装类的缓存问题
+</span><span style="color:#75715e"></span>        Integer m1 <span style="color:#f92672">=</span>4000<span style="color:#f92672">;</span>
+       Integer m2 <span style="color:#f92672">=</span> 4000<span style="color:#f92672">;</span>
+
+       <span style="color:#75715e">//当数字在-128 ～127，返回缓存数，
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// 也就是说如果数值在这个范围之内，就从这个数组中返回这个数值
+</span><span style="color:#75715e"></span>       Integer m3 <span style="color:#f92672">=</span>123<span style="color:#f92672">;</span>
+       Integer m4 <span style="color:#f92672">=</span>123<span style="color:#f92672">;</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>m1<span style="color:#f92672">==</span>m2<span style="color:#f92672">);</span><span style="color:#75715e">//false,两个不同的对象
+</span><span style="color:#75715e"></span>        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>m3<span style="color:#f92672">==</span>m4<span style="color:#f92672">);</span><span style="color:#75715e">//true,从数组中取出的同一个对象
+</span><span style="color:#75715e"></span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>m1<span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>m2<span style="color:#f92672">));</span><span style="color:#75715e">//true
+</span><span style="color:#75715e"></span>
+
+
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+
+</code></pre></div>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
