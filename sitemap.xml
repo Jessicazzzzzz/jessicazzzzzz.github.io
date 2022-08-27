@@ -2,10 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jessicazzzzzz.github.io/post/blog3/</loc>
-    <lastmod>2022-08-27T23:41:16+10:00</lastmod>
+    <loc>https://jessicazzzzzz.github.io/post/homepage/work/</loc>
+  </url><url>
+    <loc>https://jessicazzzzzz.github.io/post/homepage/about/</loc>
   </url><url>
     <loc>https://jessicazzzzzz.github.io/</loc>
+    <lastmod>2022-08-27T23:41:16+10:00</lastmod>
+  </url><url>
+    <loc>https://jessicazzzzzz.github.io/post/blog3/</loc>
     <lastmod>2022-08-27T23:41:16+10:00</lastmod>
   </url><url>
     <loc>https://jessicazzzzzz.github.io/post/</loc>
@@ -14,16 +18,21 @@
     <loc>https://jessicazzzzzz.github.io/post/blog2/</loc>
     <lastmod>2022-08-27T23:37:47+10:00</lastmod>
   </url><url>
-    <loc>https://jessicazzzzzz.github.io/java/</loc>
-    <lastmod>2022-08-27T23:31:46+10:00</lastmod>
-  </url><url>
-    <loc>https://jessicazzzzzz.github.io/java/%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2022-08-27T23:31:46+10:00</lastmod>
-  </url><url>
     <loc>https://jessicazzzzzz.github.io/post/blog/</loc>
     <lastmod>2022-08-27T23:15:44+10:00</lastmod>
   </url><url>
+    <loc>https://jessicazzzzzz.github.io/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jessicazzzzzz.github.io/about/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jessicazzzzzz.github.io/contact/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://jessicazzzzzz.github.io/categories/</loc>
+  </url><url>
+    <loc>https://jessicazzzzzz.github.io/series/</loc>
   </url><url>
     <loc>https://jessicazzzzzz.github.io/tags/</loc>
   </url>

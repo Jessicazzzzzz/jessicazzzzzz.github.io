@@ -35,12 +35,10 @@
 
 
 
-
-
 <html
   class="not-ready text-sm lg:text-base"
   style="--bg: #faf6f1"
-  lang="en-us"
+  lang="en"
 >
   <head>
   <meta charset="utf-8" />
@@ -48,7 +46,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   
-  <title>Blog3 - My New Hugo Site</title>
+  <title>Blog3 - whitepaper</title>
 
   
   <meta name="theme-color" />
@@ -66,11 +64,15 @@
   <link rel="preload stylesheet" as="style" href="https://jessicazzzzzz.github.io/main.min.css" />
 
   
+  <script
+    defer
+    src="https://jessicazzzzzz.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
 
   
   
-  
-    
   
   <link
     rel="preload"
@@ -81,7 +83,7 @@
   
   
   
-  <link rel="preload" as="image" href="https://www.gravatar.com/avatar/6fd8df4abe41f17fd8e2dd7d97b5cc8c?s=160&amp;d=identicon" />
+  <link rel="preload" as="image" href="https://www.gravatar.com/avatar/ef333c1203724d1cb48104b2679529bb?s=160&amp;d=identicon" />
   
   
 
@@ -91,8 +93,6 @@
   <link rel="preload" as="image" href="https://jessicazzzzzz.github.io/github.svg" />
   
   <link rel="preload" as="image" href="https://jessicazzzzzz.github.io/instagram.svg" />
-  
-  <link rel="preload" as="image" href="https://jessicazzzzzz.github.io/rss.svg" />
   
 
   
@@ -141,10 +141,10 @@
     <header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
   <div class="relative z-50 mr-auto flex items-center">
     <a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href="https://jessicazzzzzz.github.io/"
-      >My New Hugo Site</a
+      >whitepaper</a
     >
     <a
-      class="btn-dark ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]"
+      class="btn-dark ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
     ></a>
   </div>
 
@@ -197,6 +197,22 @@
   >
     
     
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/contact/"
+        >Contact</a
+      >
+      
+    </nav>
+    
 
     
     <nav
@@ -206,28 +222,21 @@
       <a
         class="h-8 w-8 [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
         style="--url: url(./twitter.svg)"
-        href=" https://twitter.com/YOUR_TWITTER_ID "
+        href=" https://twitter.com/Jessicagogogo "
         target="_blank"
       ></a>
       
       <a
         class="h-8 w-8 [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
         style="--url: url(./github.svg)"
-        href=" https://github.com/YOUR_GITHUB_ID "
+        href=" https://github.com/jessicazzzzzz "
         target="_blank"
       ></a>
       
       <a
         class="h-8 w-8 [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
         style="--url: url(./instagram.svg)"
-        href=" https://instagram.com/YOUR_INSTAGRAM_ID "
-        target="_blank"
-      ></a>
-      
-      <a
-        class="h-8 w-8 [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
-        style="--url: url(./rss.svg)"
-        href=" https://jessicazzzzzz.github.io/index.xml "
+        href=" https://instagram.com/ "
         target="_blank"
       ></a>
       
@@ -266,6 +275,10 @@
   
   <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
     
+    <a class="flex w-1/2 items-center p-6 pr-3 no-underline" href="https://jessicazzzzzz.github.io/post/homepage/about/"
+      ><span class="mr-1.5">←</span><span>Our Difference</span></a
+    >
+    
     
     <a
       class="ml-auto flex w-1/2 items-center justify-end p-6 pl-3 no-underline"
@@ -278,15 +291,6 @@
 
   
   
-  <div id="disqus_thread"></div>
-  <script>
-    const disqusShortname = 'YOUR_DISQUS_SHORTNAME';
-    const script = document.createElement('script');
-    script.src = 'https://' + disqusShortname + '.disqus.com/embed.js';
-    script.setAttribute('data-timestamp', +new Date());
-    document.head.appendChild(script);
-  </script>
-  
 </article>
 
 
@@ -295,7 +299,7 @@
     <footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
   <div class="mr-auto">
     &copy; 2022
-    <a class="link" href="https://jessicazzzzzz.github.io/">My New Hugo Site</a>
+    <a class="link" href="https://jessicazzzzzz.github.io/">whitepaper</a>
   </div>
   <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank">Powered by Hugo️️</a
   >️
