@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready text-sm lg:text-base"
+  style="--bg: #faf6f1"
+  lang="en"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>cLearningDay1 - whitepaper</title>
+
+  
+  <meta name="theme-color" />
+  
+  <meta name="description" content="注释符 // /// 文档注释，用于注释函数和类 /* */ 快捷键 ctrl &#43;k&#43;c 注释 ctrl &#43; k&#43;u 取消注释 变量 变量的类型 int ,char ,string ,decimal(m),double ,float(f) ,bool
+char ,它是无法储存空字符的
+decimal 是更加精确
+命名规范：变量开头小写，以后遇到一个单词大写;方法和类是每个单词开头都要大写
+类型转换方式 相同类型 显性转换，大的存储类型-&gt;小的存储类型 ，（需要转换的类型） 隐性转换，小的存储类型-&gt;大的存储类型,自动转换 不同类型 一般来说是string &ndash;&gt;int ,面上过的去，过不去就需要用try-catch Convert.ToDouble(string),Convert.ToInt32(string) 运算符 &#43;只要一边遇到字符串，就是拼接，两边都是数字就相加 只要做运算，必须保证两边的类型一致，包括复制运算 占位符 { 0 },跟c中很像，它的位置跟后面的变量是一样的，它相当于数组，需要按顺序走，小心越界 转义符 在读取文件的时候会很有效果
+\b 回退一个 ⚠️ 如果放在开头，或者结尾，就不起作用 \n 回车 \r\n 是windows 系统中的回车 \t 一个tab 键 \ 可以后面跟&quot; 也可以显示出来 @ 放在&quot;c:\a\b &ldquo;,这样就不需要写成&quot;c:\\a\ \ b&rdquo; @还有一个功能是可以将原有的格式保留输出 异常捕获 当一段代码出现问题的时候，就需要用try &ndash; catch 注意catch 的范围，是到哪里，只要捕获了异常，就会不会执行有问题代码以后的任何代码内容 变量的作用域 {}外都不能使用 break 跳出整个循环 switch- case swithc(变量) 跟case “值” ，必须类型匹配 do -while/ while continue 跳出本次循环 " />
+  <meta name="author" content="" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://jessicazzzzzz.github.io/main.min.css" />
+
+  
+  <script
+    defer
+    src="https://jessicazzzzzz.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+  <link
+    rel="preload"
+    as="image"
+    href="https://jessicazzzzzz.github.io/theme.png"
+  />
+
+  
+  
+  
+  <link rel="preload" as="image" href="https://www.gravatar.com/avatar/ef333c1203724d1cb48104b2679529bb?s=160&amp;d=identicon" />
+  
+  
+
+  
+  <link rel="preload" as="image" href="https://jessicazzzzzz.github.io/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://jessicazzzzzz.github.io/github.svg" />
+  
+  <link rel="preload" as="image" href="https://jessicazzzzzz.github.io/instagram.svg" />
+  
+
+  
+  <link rel="icon" href="https://jessicazzzzzz.github.io/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://jessicazzzzzz.github.io/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.101.0" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="cLearningDay1" />
+<meta property="og:description" content="注释符 // /// 文档注释，用于注释函数和类 /* */ 快捷键 ctrl &#43;k&#43;c 注释 ctrl &#43; k&#43;u 取消注释 变量 变量的类型 int ,char ,string ,decimal(m),double ,float(f) ,bool
+char ,它是无法储存空字符的
+decimal 是更加精确
+命名规范：变量开头小写，以后遇到一个单词大写;方法和类是每个单词开头都要大写
+类型转换方式 相同类型 显性转换，大的存储类型-&gt;小的存储类型 ，（需要转换的类型） 隐性转换，小的存储类型-&gt;大的存储类型,自动转换 不同类型 一般来说是string &ndash;&gt;int ,面上过的去，过不去就需要用try-catch Convert.ToDouble(string),Convert.ToInt32(string) 运算符 &#43;只要一边遇到字符串，就是拼接，两边都是数字就相加 只要做运算，必须保证两边的类型一致，包括复制运算 占位符 { 0 },跟c中很像，它的位置跟后面的变量是一样的，它相当于数组，需要按顺序走，小心越界 转义符 在读取文件的时候会很有效果
+\b 回退一个 ⚠️ 如果放在开头，或者结尾，就不起作用 \n 回车 \r\n 是windows 系统中的回车 \t 一个tab 键 \ 可以后面跟&quot; 也可以显示出来 @ 放在&quot;c:\a\b &ldquo;,这样就不需要写成&quot;c:\\a\ \ b&rdquo; @还有一个功能是可以将原有的格式保留输出 异常捕获 当一段代码出现问题的时候，就需要用try &ndash; catch 注意catch 的范围，是到哪里，只要捕获了异常，就会不会执行有问题代码以后的任何代码内容 变量的作用域 {}外都不能使用 break 跳出整个循环 switch- case swithc(变量) 跟case “值” ，必须类型匹配 do -while/ while continue 跳出本次循环 " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jessicazzzzzz.github.io/post/clearingday1/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-09-05T19:07:03+10:00" />
+<meta property="article:modified_time" content="2022-09-05T19:07:03+10:00" />
+
+
+  
+  <meta itemprop="name" content="cLearningDay1">
+<meta itemprop="description" content="注释符 // /// 文档注释，用于注释函数和类 /* */ 快捷键 ctrl &#43;k&#43;c 注释 ctrl &#43; k&#43;u 取消注释 变量 变量的类型 int ,char ,string ,decimal(m),double ,float(f) ,bool
+char ,它是无法储存空字符的
+decimal 是更加精确
+命名规范：变量开头小写，以后遇到一个单词大写;方法和类是每个单词开头都要大写
+类型转换方式 相同类型 显性转换，大的存储类型-&gt;小的存储类型 ，（需要转换的类型） 隐性转换，小的存储类型-&gt;大的存储类型,自动转换 不同类型 一般来说是string &ndash;&gt;int ,面上过的去，过不去就需要用try-catch Convert.ToDouble(string),Convert.ToInt32(string) 运算符 &#43;只要一边遇到字符串，就是拼接，两边都是数字就相加 只要做运算，必须保证两边的类型一致，包括复制运算 占位符 { 0 },跟c中很像，它的位置跟后面的变量是一样的，它相当于数组，需要按顺序走，小心越界 转义符 在读取文件的时候会很有效果
+\b 回退一个 ⚠️ 如果放在开头，或者结尾，就不起作用 \n 回车 \r\n 是windows 系统中的回车 \t 一个tab 键 \ 可以后面跟&quot; 也可以显示出来 @ 放在&quot;c:\a\b &ldquo;,这样就不需要写成&quot;c:\\a\ \ b&rdquo; @还有一个功能是可以将原有的格式保留输出 异常捕获 当一段代码出现问题的时候，就需要用try &ndash; catch 注意catch 的范围，是到哪里，只要捕获了异常，就会不会执行有问题代码以后的任何代码内容 变量的作用域 {}外都不能使用 break 跳出整个循环 switch- case swithc(变量) 跟case “值” ，必须类型匹配 do -while/ while continue 跳出本次循环 "><meta itemprop="datePublished" content="2022-09-05T19:07:03+10:00" />
+<meta itemprop="dateModified" content="2022-09-05T19:07:03+10:00" />
+<meta itemprop="wordCount" content="88">
+<meta itemprop="keywords" content="" />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="cLearningDay1"/>
+<meta name="twitter:description" content="注释符 // /// 文档注释，用于注释函数和类 /* */ 快捷键 ctrl &#43;k&#43;c 注释 ctrl &#43; k&#43;u 取消注释 变量 变量的类型 int ,char ,string ,decimal(m),double ,float(f) ,bool
+char ,它是无法储存空字符的
+decimal 是更加精确
+命名规范：变量开头小写，以后遇到一个单词大写;方法和类是每个单词开头都要大写
+类型转换方式 相同类型 显性转换，大的存储类型-&gt;小的存储类型 ，（需要转换的类型） 隐性转换，小的存储类型-&gt;大的存储类型,自动转换 不同类型 一般来说是string &ndash;&gt;int ,面上过的去，过不去就需要用try-catch Convert.ToDouble(string),Convert.ToInt32(string) 运算符 &#43;只要一边遇到字符串，就是拼接，两边都是数字就相加 只要做运算，必须保证两边的类型一致，包括复制运算 占位符 { 0 },跟c中很像，它的位置跟后面的变量是一样的，它相当于数组，需要按顺序走，小心越界 转义符 在读取文件的时候会很有效果
+\b 回退一个 ⚠️ 如果放在开头，或者结尾，就不起作用 \n 回车 \r\n 是windows 系统中的回车 \t 一个tab 键 \ 可以后面跟&quot; 也可以显示出来 @ 放在&quot;c:\a\b &ldquo;,这样就不需要写成&quot;c:\\a\ \ b&rdquo; @还有一个功能是可以将原有的格式保留输出 异常捕获 当一段代码出现问题的时候，就需要用try &ndash; catch 注意catch 的范围，是到哪里，只要捕获了异常，就会不会执行有问题代码以后的任何代码内容 变量的作用域 {}外都不能使用 break 跳出整个循环 switch- case swithc(变量) 跟case “值” ，必须类型匹配 do -while/ while continue 跳出本次循环 "/>
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href="https://jessicazzzzzz.github.io/"
+      >whitepaper</a
+    >
+    <a
+      class="btn-dark ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+    ></a>
+  </div>
+
+  <a
+    class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+  ></a>
+
+  
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = `"#faf6f1"`.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkVal = localStorage.getItem('dark');
+    setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/contact/"
+        >Contact</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href=" https://twitter.com/Jessicagogogo "
+        target="_blank"
+      ></a>
+      
+      <a
+        class="h-8 w-8 [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href=" https://github.com/jessicazzzzzz "
+        target="_blank"
+      ></a>
+      
+      <a
+        class="h-8 w-8 [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./instagram.svg)"
+        href=" https://instagram.com/ "
+        target="_blank"
+      ></a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-20 pb-32 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-20">
+    <h1 class="!my-0 pb-2.5">cLearningDay1</h1>
+
+    
+    <div class="text-sm opacity-60">
+      
+      <time>Sep 5, 2022</time>
+      
+      
+    </div>
+    
+  </header>
+
+  <section><h3 id="注释符">注释符</h3>
+<ul>
+<li>//</li>
+<li>/// 文档注释，用于注释函数和类</li>
+<li>/*  */</li>
+</ul>
+<h3 id="快捷键">快捷键</h3>
+<ul>
+<li>ctrl +k+c 注释</li>
+<li>ctrl + k+u 取消注释</li>
+</ul>
+<h3 id="变量">变量</h3>
+<h4 id="变量的类型">变量的类型</h4>
+<ul>
+<li>
+<p>int ,char ,string ,decimal(m),double ,float(f) ,bool</p>
+</li>
+<li>
+<p>char  ,它是无法储存空字符的</p>
+</li>
+<li>
+<p>decimal 是更加精确</p>
+</li>
+<li>
+<p>命名规范：变量开头小写，以后遇到一个单词大写;方法和类是每个单词开头都要大写</p>
+</li>
+</ul>
+<h5 id="类型转换方式">类型转换方式</h5>
+<ul>
+<li>相同类型
+<ul>
+<li>显性转换，大的存储类型-&gt;小的存储类型 ，（需要转换的类型）</li>
+<li>隐性转换，小的存储类型-&gt;大的存储类型,自动转换</li>
+</ul>
+</li>
+<li>不同类型
+<ul>
+<li>一般来说是string &ndash;&gt;int ,面上过的去，过不去就需要用try-catch</li>
+<li>Convert.ToDouble(string),Convert.ToInt32(string)</li>
+</ul>
+</li>
+</ul>
+<h3 id="运算符">运算符</h3>
+<ul>
+<li>+只要一边遇到字符串，就是拼接，两边都是数字就相加</li>
+<li>只要做运算，必须保证两边的类型一致，包括复制运算</li>
+</ul>
+<h3 id="占位符">占位符</h3>
+<ul>
+<li>{ 0 },跟c中很像，它的位置跟后面的变量是一样的，它相当于数组，需要按顺序走，小心越界</li>
+</ul>
+<h3 id="转义符">转义符</h3>
+<blockquote>
+<p>在读取文件的时候会很有效果</p>
+</blockquote>
+<ul>
+<li>\b 回退一个 ⚠️ 如果放在开头，或者结尾，就不起作用</li>
+<li>\n 回车 \r\n 是windows 系统中的回车</li>
+<li>\t 一个tab 键</li>
+<li>\ 可以后面跟&quot; 也可以显示出来</li>
+<li>@ 放在&quot;c:\a\b &ldquo;,这样就不需要写成&quot;c:\\a\ \ b&rdquo;</li>
+<li>@还有一个功能是可以将原有的格式保留输出</li>
+</ul>
+<h3 id="异常捕获">异常捕获</h3>
+<ul>
+<li>当一段代码出现问题的时候，就需要用try &ndash; catch</li>
+<li>注意catch 的范围，是到哪里，只要捕获了异常，就会不会执行有问题代码以后的任何代码内容</li>
+</ul>
+<h3 id="变量的作用域">变量的作用域</h3>
+<ul>
+<li>{}外都不能使用</li>
+</ul>
+<h3 id="break">break</h3>
+<ul>
+<li>跳出整个循环</li>
+</ul>
+<h3 id="switch--case">switch- case</h3>
+<ul>
+<li>swithc(变量) 跟case “值” ，必须类型匹配</li>
+<li></li>
+</ul>
+<h3 id="do--while-while">do -while/ while</h3>
+<h3 id="continue">continue</h3>
+<ul>
+<li>跳出本次循环</li>
+</ul>
+</section>
+
+  
+  
+
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    <a class="flex w-1/2 items-center p-6 pr-3 no-underline" href="https://jessicazzzzzz.github.io/post/homepage/about/"
+      ><span class="mr-1.5">←</span><span>Our Difference</span></a
+    >
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end p-6 pl-3 no-underline"
+      href="https://jessicazzzzzz.github.io/post/windows_vs%E6%98%BE%E7%A4%BA%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/"
+      ><span>windows显示中文乱码问题</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+  <div class="mr-auto">
+    &copy; 2022
+    <a class="link" href="https://jessicazzzzzz.github.io/">whitepaper</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank">Powered by Hugo️️</a
+  >️
+  <a class="link" href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank"
+    >▷ Paper 6</a
+  >
+</footer>
+
+  </body>
+</html>

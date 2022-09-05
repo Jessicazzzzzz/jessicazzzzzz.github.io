@@ -27,11 +27,11 @@
     </item>
     
     <item>
-      <title>C#_learing_day1</title>
-      <link>https://jessicazzzzzz.github.io/post/c#_learing_day1/</link>
+      <title>cLearningDay1</title>
+      <link>https://jessicazzzzzz.github.io/post/clearingday1/</link>
       <pubDate>Mon, 05 Sep 2022 19:07:03 +1000</pubDate>
       
-      <guid>https://jessicazzzzzz.github.io/post/c#_learing_day1/</guid>
+      <guid>https://jessicazzzzzz.github.io/post/clearingday1/</guid>
       <description>注释符 // /// 文档注释，用于注释函数和类 /* */ 快捷键 ctrl +k+c 注释 ctrl + k+u 取消注释 变量 变量的类型 int ,char ,string ,decimal(m),double ,float(f) ,bool
 char ,它是无法储存空字符的
 decimal 是更加精确
