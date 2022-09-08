@@ -7,23 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 05 Sep 2022 19:07:03 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Sep 2022 15:58:14 +1000</lastBuildDate><atom:link href="https://jessicazzzzzz.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>We Help Business Grow</title>
-      <link>https://jessicazzzzzz.github.io/post/homepage/work/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jessicazzzzzz.github.io/post/homepage/work/</guid>
-      <description>Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit.</description>
-    </item>
-    
-    <item>
-      <title>Our Difference</title>
+      <title>编程学习记录</title>
       <link>https://jessicazzzzzz.github.io/post/homepage/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jessicazzzzzz.github.io/post/homepage/about/</guid>
-      <description>Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Ipsum dolor sit amet, et essent mediocritatem quo.</description>
+      <description>记录学习编程的点滴</description>
+    </item>
+    
+    <item>
+      <title>空字符串跟null的区别</title>
+      <link>https://jessicazzzzzz.github.io/post/%E7%A9%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%B7%9Fnull%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Thu, 08 Sep 2022 15:58:14 +1000</pubDate>
+      
+      <guid>https://jessicazzzzzz.github.io/post/%E7%A9%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%B7%9Fnull%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description> null 在空间中没有开辟空间 &amp;quot;&amp;quot; 在空间中开了空间，但是初值是空 </description>
     </item>
     
     <item>
@@ -50,21 +50,14 @@ decimal 是更加精确
     </item>
     
     <item>
-      <title>Blog2</title>
-      <link>https://jessicazzzzzz.github.io/post/blog2/</link>
+      <title>cLearningDay2</title>
+      <link>https://jessicazzzzzz.github.io/post/clearnigday2/</link>
       <pubDate>Sat, 27 Aug 2022 23:37:47 +1000</pubDate>
       
-      <guid>https://jessicazzzzzz.github.io/post/blog2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>https://jessicazzzzzz.github.io/post/blog/</link>
-      <pubDate>Sat, 27 Aug 2022 23:15:44 +1000</pubDate>
-      
-      <guid>https://jessicazzzzzz.github.io/post/blog/</guid>
-      <description>怎么创建hugo 还是需要看视频 </description>
+      <guid>https://jessicazzzzzz.github.io/post/clearnigday2/</guid>
+      <description>bool 它最常用的用法是做信号变量，当循环逻辑中，某段代码需要满足一定条件才能执行，就可以通过设置这个来决定什么时候自行 enum 语法 [public] enum 枚举名{ 值1，值2 } 枚举把它理解成一个类型，它跟int直接是默认转换的，int对应的是枚举中的每个值的位置，超出int 的范围不会报错；跟string 的转换就需要用到相应的方法，如果将string 转成枚举类型如下：
+（枚举类型）Enum.Parse(tyof (枚举类型)，stringName) ,注意这个是结果是Object，需要再显示转换一下相应的枚举类型
+如果使用枚举类型？ 枚举类型.值 常量 关键字 const 结构 关键字 struct [public] struct 结构名{ 属性，//记得属性名前面加_属性名，这样规范，一看就知道是字段 属性 } 属性的默认权限只能在struct中使用，如果外部想要引用，就需要加public </description>
     </item>
     
   </channel>

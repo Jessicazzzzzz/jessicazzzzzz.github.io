@@ -46,12 +46,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   
-  <title>windows显示中文乱码问题 - whitepaper</title>
+  <title>空字符串跟null的区别 - whitepaper</title>
 
   
   <meta name="theme-color" />
   
-  <meta name="description" content="question : vs中所有console中的中文输入和输出都乱码 原因 出现这种原因是自己的电脑的编码跟中文的编码不一致导致的 解决方案 修改电脑语言配置 点击相关设置:弹出时钟和区域-&gt;点击区域中更改日期,时间或数字格式-&gt;区域-&gt;管理-&gt;非unicode程序的语言-&gt;选择beta版，使用unicodeutf-8提供全球语言支持 运行vs code中的程序，当出现console时,右击，选择属性，选项，可以查看vs 所用的编码是什么，只要跟系统的一致，就可以显示 当接受输入，还需要Console.InputEncoding = Encoding.Unicode; " />
+  <meta name="description" content=" null 在空间中没有开辟空间 &quot;&quot; 在空间中开了空间，但是初值是空 " />
   <meta name="author" content="" />
   
 
@@ -114,24 +114,24 @@
   
   
   
-  <meta property="og:title" content="windows显示中文乱码问题" />
-<meta property="og:description" content="question : vs中所有console中的中文输入和输出都乱码 原因 出现这种原因是自己的电脑的编码跟中文的编码不一致导致的 解决方案 修改电脑语言配置 点击相关设置:弹出时钟和区域-&gt;点击区域中更改日期,时间或数字格式-&gt;区域-&gt;管理-&gt;非unicode程序的语言-&gt;选择beta版，使用unicodeutf-8提供全球语言支持 运行vs code中的程序，当出现console时,右击，选择属性，选项，可以查看vs 所用的编码是什么，只要跟系统的一致，就可以显示 当接受输入，还需要Console.InputEncoding = Encoding.Unicode; " />
+  <meta property="og:title" content="空字符串跟null的区别" />
+<meta property="og:description" content=" null 在空间中没有开辟空间 &quot;&quot; 在空间中开了空间，但是初值是空 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jessicazzzzzz.github.io/post/windows_vs%E6%98%BE%E7%A4%BA%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-08-27T23:41:16+10:00" />
-<meta property="article:modified_time" content="2022-08-27T23:41:16+10:00" />
+<meta property="og:url" content="https://jessicazzzzzz.github.io/post/%E7%A9%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%B7%9Fnull%E7%9A%84%E5%8C%BA%E5%88%AB/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-09-08T15:58:14+10:00" />
+<meta property="article:modified_time" content="2022-09-08T15:58:14+10:00" />
 
 
   
-  <meta itemprop="name" content="windows显示中文乱码问题">
-<meta itemprop="description" content="question : vs中所有console中的中文输入和输出都乱码 原因 出现这种原因是自己的电脑的编码跟中文的编码不一致导致的 解决方案 修改电脑语言配置 点击相关设置:弹出时钟和区域-&gt;点击区域中更改日期,时间或数字格式-&gt;区域-&gt;管理-&gt;非unicode程序的语言-&gt;选择beta版，使用unicodeutf-8提供全球语言支持 运行vs code中的程序，当出现console时,右击，选择属性，选项，可以查看vs 所用的编码是什么，只要跟系统的一致，就可以显示 当接受输入，还需要Console.InputEncoding = Encoding.Unicode; "><meta itemprop="datePublished" content="2022-08-27T23:41:16+10:00" />
-<meta itemprop="dateModified" content="2022-08-27T23:41:16+10:00" />
-<meta itemprop="wordCount" content="14">
+  <meta itemprop="name" content="空字符串跟null的区别">
+<meta itemprop="description" content=" null 在空间中没有开辟空间 &quot;&quot; 在空间中开了空间，但是初值是空 "><meta itemprop="datePublished" content="2022-09-08T15:58:14+10:00" />
+<meta itemprop="dateModified" content="2022-09-08T15:58:14+10:00" />
+<meta itemprop="wordCount" content="4">
 <meta itemprop="keywords" content="" />
   
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="windows显示中文乱码问题"/>
-<meta name="twitter:description" content="question : vs中所有console中的中文输入和输出都乱码 原因 出现这种原因是自己的电脑的编码跟中文的编码不一致导致的 解决方案 修改电脑语言配置 点击相关设置:弹出时钟和区域-&gt;点击区域中更改日期,时间或数字格式-&gt;区域-&gt;管理-&gt;非unicode程序的语言-&gt;选择beta版，使用unicodeutf-8提供全球语言支持 运行vs code中的程序，当出现console时,右击，选择属性，选项，可以查看vs 所用的编码是什么，只要跟系统的一致，就可以显示 当接受输入，还需要Console.InputEncoding = Encoding.Unicode; "/>
+<meta name="twitter:title" content="空字符串跟null的区别"/>
+<meta name="twitter:description" content=" null 在空间中没有开辟空间 &quot;&quot; 在空间中开了空间，但是初值是空 "/>
 
   
   
@@ -253,29 +253,21 @@
 
 <article>
   <header class="mb-20">
-    <h1 class="!my-0 pb-2.5">windows显示中文乱码问题</h1>
+    <h1 class="!my-0 pb-2.5">空字符串跟null的区别</h1>
 
     
     <div class="text-sm opacity-60">
       
-      <time>Aug 27, 2022</time>
+      <time>Sep 8, 2022</time>
       
       
     </div>
     
   </header>
 
-  <section><h3 id="question--vs中所有console中的中文输入和输出都乱码">question : vs中所有console中的中文输入和输出都乱码</h3>
-<h3 id="原因">原因</h3>
-<ul>
-<li>出现这种原因是自己的电脑的编码跟中文的编码不一致导致的</li>
-</ul>
-<h5 id="解决方案">解决方案</h5>
-<ul>
-<li>修改电脑语言配置</li>
-<li>点击相关设置:弹出时钟和区域-&gt;点击区域中更改日期,时间或数字格式-&gt;区域-&gt;管理-&gt;非unicode程序的语言-&gt;选择beta版，使用unicodeutf-8提供全球语言支持</li>
-<li>运行vs code中的程序，当出现console时,右击，选择属性，选项，可以查看vs 所用的编码是什么，只要跟系统的一致，就可以显示</li>
-<li>当接受输入，还需要Console.InputEncoding = Encoding.Unicode;</li>
+  <section><ul>
+<li>null 在空间中没有开辟空间</li>
+<li>&quot;&quot; 在空间中开了空间，但是初值是空</li>
 </ul>
 </section>
 
@@ -287,15 +279,15 @@
   
   <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
     
-    <a class="flex w-1/2 items-center p-6 pr-3 no-underline" href="https://jessicazzzzzz.github.io/post/clearingday1/"
-      ><span class="mr-1.5">←</span><span>cLearningDay1</span></a
+    <a class="flex w-1/2 items-center p-6 pr-3 no-underline" href="https://jessicazzzzzz.github.io/post/homepage/about/"
+      ><span class="mr-1.5">←</span><span>编程学习记录</span></a
     >
     
     
     <a
       class="ml-auto flex w-1/2 items-center justify-end p-6 pl-3 no-underline"
-      href="https://jessicazzzzzz.github.io/post/clearnigday2/"
-      ><span>cLearningDay2</span><span class="ml-1.5">→</span></a
+      href="https://jessicazzzzzz.github.io/post/clearingday1/"
+      ><span>cLearningDay1</span><span class="ml-1.5">→</span></a
     >
     
   </nav>
